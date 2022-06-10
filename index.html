@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="images/favicon.png" type="image/png" rel="icon" />
+        <script src="https://kit.fontawesome.com/60967665fa.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+        <title>Marvel vs DC</title>
+    </head>
+    <body>
+        <header class="dark">
+            <div class="header-container">
+                <a href="https://marvel.com" target="_blank">
+                    <img src="images/marvel-images/marvel_original.png" alt="marvel logo" id="marvel-logo">
+                </a>
+                <img src="images//versus.png" alt="versus" id="versus">
+                <a href="https://dccomics.com" target="_blank">
+                    <img src="images/dc-images/dc_orginal.png" alt="dc logo" id="dc-logo">
+                </a>
+                <button id="dark-toggle" class="dark-toggle" aria-label="toggle dark mode">
+                    <i class="bi bi-circle-half"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="go-up">
+            <button><i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+
+        <div class="container">
+            <div class="search-container">
+                <div class="search-bar" id="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="searchbar" id="search-bar">
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo-imgs">
+            <img src="images/marvel-images/marvel_black.png" alt="">
+            <img src="images/dc-images/dc_black.png" alt="">
+        </div>
+        
+        <div class="result-container" id="result-container">
+            <div class="card" id="marvel-card">
+                <div class="front">
+                    <img src="images/marvel-images/characters/iron-man.png" alt="Marvel Character" id="marvel-image">
+                    <h1>Iron Man</h1>
+                </div>
+                <div class="back">
+                    <h1>Iron Man<hr style="width: 75%; border-color: #000"></h1>
+                    
+                    <div class="char-info">
+                        <div class="appearance">
+                            <h2>First Appearance</h2>
+                            <p id="marvel-comic-year">Tales of Suspense #39 (1963)</p>
+                        </div>
+                        <div class="movies">
+                            <h2>Movies</h2>
+                            <div id="marvel-movies-list">
+                                <p>The Incredible Hulk (2008)</p>
+                                <p>Iron Man(2008)</p>
+                                <p>Iron Man 2 (2010)</p>
+                                <p>The Avengers (2012)</p>
+                                <p>Iron Man 3 (2013)</p>
+                                <p>Avengers: Age of Ultron (2015)</p>
+                                <p>Captain America: Civil War (2016)</p>
+                                <p>Spider-Man: Homecoming (2017)</p>
+                                <p>Avengers: Infinity War (2018)</p>
+                                <p>Avengers: Endgame (2019)</p>
+                                <p>Spider-Man: Far From Home (2019)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="flip" id="flip" data-tooltip="Click to Flip">
+                    <i class="fa-solid fa-info"></i>
+                </button>
+            </div>
+            
+            <div class="card" id="dc-card">
+                <div class="front">
+                    <img src="images/dc-images/characters/cyborg.png" alt="DC Character" id="dc-image">
+                    <h1>Cyborg</h1>
+                </div>
+                <div class="back">
+                    <h1>Cyborg <hr></h1>
+                    
+                    <div class="char-info">
+                        <div class="appearance">
+                            <h2>First Appearance</h2>
+                            <p id="dc-comic-year">DC Comics Presents #26 (1980)</p>
+                        </div>
+                        <div class="movies">
+                            <h2>Movies</h2>
+                            <div id="dc-movies-list">
+                                <p>Batman v Superman: Dawn of Justice (2016)</p>
+                                <p>Justice League (2017)</p>
+                                <p>Zack Snyder's Justice League (2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="not-found"></div>
+
+        <section>
+            <div class="over-characters">
+                <h1>Over +200 characters to check</h1>
+                <h2>and we're still counting...</h2>
+            </div>
+            <img src="images/reading-comics.png" alt="Comics">
+        </section>
+
+
+        <section>
+            <div class="about" id="whst-is-marvel">
+                <h1>
+                    What is Marvel ?
+                </h1>
+                <div class="indent">
+                    <h3>Comics</h3>
+                    <p>
+                        Marvel Comics is an American superheroes comic books publisher that was founded 83 years ago, in 1939 by Martin Goodman as Timely Comics that, later in 1951, became <a href="https://en.wikipedia.org/wiki/Atlas_Comics_(1950s)" target="_blank">Atlas Comics</a>. In 1961 the era of Marvel Comics began with the appearance of <a href="https://en.wikipedia.org/wiki/The_Fantastic_Four" target="_blank">The Fantastic Four</a> superhero team which was created by <A href="https://en.wikipedia.org/wiki/Stan_Lee" target="_blank">Stan Lee</A> and many others.
+                        Marvel owns many characters that became very famous around the world, such as <a href="https://en.wikipedia.org/wiki/Spider-Man" target="_blank">Spider-Mam</a>, <a href="https://en.wikipedia.org/wiki/Iron_Man" target="_blank">Iron Man</a> and superhero teams like <a href="https://en.wikipedia.org/wiki/Avengers_(comics)" target="_blank">Avnegers</a> or <a href="https://en.wikipedia.org/wiki/X-Men" target="_blank">X-Men</a>.
+                        Many Marvel characters operate in a single reality, known as Marvel Universe, most of their action locations reflecting into real life places, like New York City. 
+                    </p>
+                    <h3>Marvel Cinematic Universe</h3>
+                    <p>
+                        Marvel Cinematic Universe (MCU) is an American media franchise, and shared universe that is centered on a series of superhero movies, television series, and short films which are produced by <a href="https://en.wikipedia.org/wiki/Marvel_Studios" target="_blank">Marvel Studios</a>. The movies are based on some comic books published by Marvel Comics.
+                        <br>
+                        MCU starts with the 2008 <a href="https://www.imdb.com/title/tt0371746/" target="_blank">Iron Man</a> movie, which is the first movie in <a href="https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe:_Phase_One" target="_blank">Phase One</a> and directed by Jon Favreau. The last movie released is <a href="https://www.imdb.com/title/tt9419884/?ref_=nv_sr_srsg_0" target="_blank">Doctor Strange in the Multiverse of Madness</a> (May 2022).
+                    </p>
+                </div>
+            </div>
+
+            <div class="about" id="what-is-dc">
+                <h1>
+                    ...but what about DC ?
+                </h1>
+                <div class="indent">
+                    <h3>Comics</h3>
+                    <p>
+                        DC Comics is also an American superheroes comic books publisher, competing with Marvel Comics. It is a branch of 
+                        <a href="https://en.wikipedia.org/wiki/Warner_Bros._Discovery">Warner Bros. Discovery</a> and one of the largest and oldest American comic book companies, first comic being published in 1937. The majority of the publications take place in DC Universe and they feature a variety of iconic heroes such as <a href="https://en.wikipedia.org/wiki/Superman">Superman</a>, <a href="https://en.wikipedia.org/wiki/Batman">Batman</a> and <a href="https://en.wikipedia.org/wiki/Wonder_Woman">Wonder Woman</a>. <A href="https://en.wikipedia.org/wiki/Justice_League">Justice League</A> and <a href="https://en.wikipedia.org/wiki/Teen_Titans">Teen Titans</a> are some of the most recognizable superhero teams in DC Universe. Along with Marvel Comics, DC Comics shared somewhere around of the 70% of the American comics in 2017.
+                    </p>
+                    <h3>DC Extended Universe</h3>
+                    <p>
+                        DC Extended Universe (DCEU) is a media franchise that follows the actions that take place in the series and movies produced by DC Films and distributed by Warner Bros. Pictures. Based on the DC Universe comics, the DCEU starts with the <a href="https://www.imdb.com/title/tt0770828/?ref_=nv_sr_srsg_0">Man of Steel</a> , released in 2013, that is a reboot of the previous Superman film sreies. There are a few feature films: <a href="https://www.imdb.com/title/tt6443346/?ref_=nv_sr_srsg_0">Black Adam</a> , <a href="https://www.imdb.com/title/tt10151854/?ref_=nv_sr_srsg_3">Shazam! Fury of the Gods</a>, <a href="https://www.imdb.com/title/tt0439572/?ref_=nv_sr_srsg_3">The Flash</a>, etc.
+                        <br>
+                        The DCEU producers decided to include television series on HBO Max, starting with <a href="https://www.imdb.com/title/tt13146488/?ref_=nv_sr_srsg_0">Peacemaker</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="imgs">
+                <img src="images/marvel-images/marvel_grey.png" alt="Marvel">
+                <img src="images/dc-images/dc_grey.png" alt="DC">
+            </div>
+            <div id="all-rights">
+                &copy; All rights reserved
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="index.js"></script>
+
+    </body>
+</html>

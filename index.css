@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+.back::-webkit-scrollbar {
+	width: .55em;
+}
+
+.back::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 100vh;
+	margin-block-end: .2em;
+	margin-block-start: .2em;
+}
+
+.back::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 100vh;
+    border: 2px solid yellow;
+}
+
+.back::-webkit-scrollbar-thumb:active {
+	background: black;	
+}
+
+img {
+    /* aspect-ratio: .5 / .5; */
+    width: 275px;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    /* height: 100vh; */
+    width: 100%;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed; */
+    width: 100%;
+    height: 110px;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --light: #fdffc4;
+    --dark: #1a1a1a;
+    --dark-secondary: #282828;
+    --secondary: #fdffc4;
+    --accent: #fdffc4;
+
+    --foreground: var(--dark);
+    --background: var(--clr-light);
+}
+
+header.dark {
+    background: var(--dark-secondary);
+}
+
+.darkmode {
+    background: var(--dark);
+}
+
+.header-container button {
+    position: absolute;
+    background: red;
+    top: 40px;
+    right: 50px;
+}
+
+header button i{
+    font-size: 12px;
+}
+
+#marvel-logo {
+    width: 180px;
+    aspect-ratio: 2.5 / 1;
+    margin-right: 15px;
+}
+
+#dc-logo {
+    width: 110px;
+    aspect-ratio: 1 / 1 !important;
+    margin-left: 20px;
+}
+
+#versus {
+    aspect-ratio: 1.9 / 1;
+    width: 140px;
+    margin-right: 40px;
+    margin-left: 40px
+}
+
+.logo-imgs {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.logo-imgs img {
+    width: 120px;
+    margin-bottom: -30px;
+}
+
+.logo-imgs img:not(:first-of-type) {
+    width: 70px;
+}
+
+.result-container {
+    width: 800px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    perspective: 700px;
+    border-radius: 10px;
+    margin: 70px 0 100px 0;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: all .3s ease-in-out;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform .6s cubic-bezier(.160, .777, .40, 1.250);
+    border-radius: 6px;
+    
+}
+
+.card:first-of-type {
+    margin-right: 100px;
+}
+.card:last-of-type {
+    margin-left: 100px;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow-x: hidden;
+    justify-self: left;
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    background: yellow;
+    color: #000;
+    font-family: 'Nova Flat', cursive;
+}
+
+.card.flipping {
+    transform: rotateY(180deg);
+}
+
+section {
+    width: min(90%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+section:last-of-type {
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+section .about {
+    width: min(90%);
+    font-size: 2rem
+}
+
+section .indent p {
+    font-size: 1.5rem
+}
+
+section .indent > h3,
+section .indent > p {
+    margin-left: 50px;
+}
+
+a {
+    color: #0c7cec;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #0c7cec;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: width .3s ease-in-out
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+a:visited {
+    color: #0c7cec;
+}
+
+.over-characters {
+    line-height: 1rem;
+    white-space: nowrap;
+}
+
+.over-characters h1 {
+    font-size: 3rem;
+    color: #000
+}
+
+.over-characters h2 {
+    font-size: 2.5rem;
+    color: #6b6b6b;
+}
+
+section img {
+    width: 40%;
+}
+
+.back > h1 > hr {
+    width: 75%;
+    border-color: #000
+}
+
+.back .appearance p {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 25px
+}
+
+.char-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.movies div {
+    line-height: 20px;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: #dcdcdc;
+    bottom: 0;
+    margin-top: 10%;
+    margin-bottom: -18px;
+}
+
+footer .imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img:first-of-type {
+    width: 200px;
+    aspect-ratio: 2.5 / 1;
+    margin-right: 15px;
+}
+
+footer img:last-of-type {
+    width: 110px;
+    aspect-ratio: 1 / 1 !important;
+    margin-left: 20px;
+}
+
+#all-rights {
+    color: #fff;
+    text-align: right;
+    width: 92%;
+    margin-inline-end: 20px;
+}
+
+.flip {
+    outline: none;
+    border: none;
+    margin: 0px;
+    aspect-ratio: 1 / 1;
+    height: 60px;
+    border-radius: 50%;
+    background-color: yellow;
+    background-size: 100%;
+    padding: 10px;
+    position: relative;
+    transition: background-color .2s ease-in;
+    box-shadow: 0px 0px 10px #777;
+}
+
+.flip::after,
+.flip::before {
+    --arrow-size: 10px;
+}
+
+.flip::after {
+    content: attr(data-tooltip);
+    color: white;
+    /* top: -2rem; */
+    top: -75%;
+    /* left: -1.5rem; */
+    left: -40%;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: 4px 5px;
+    border-radius: 7px;
+    position: absolute;
+    text-align: center;
+    width: max-content;
+    height: 0;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity .3s linear, height .2s ease-in-out;
+}
+
+.flip:hover::after {
+    opacity: 1;
+    height: 20px;
+}
+
+#dark-toggle {
+    background-color: transparent
+}
+
+.flip::before {
+    content: " ";
+    border: var(--arrow-size) solid transparent;
+    border-top-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 0;
+    left: 33%;
+    top: -30%;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity .3s ease-in-out, height .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.flip:hover::before {
+    opacity: 1;
+    height: var(--arrow-size);
+    transform: translateY(0)
+}
+
+.back {
+    overflow-y: auto;
+    line-height: 10px;
+}
+
+
+.front h1,
+.back h1 {
+    position: relative;
+    /* top: 0; */
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    /* width: 380px; */
+    text-align: center;
+}
+
+.back h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#marvel-card img {
+    transform: translateY(-10px);
+    width: 300px;
+}
+
+#dc-card img {
+    transform: translateY(-10px);
+    width: 210px;
+}
+
+.search-container > button {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.go-up button {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    background: red;
+    color: #fff;
+    font-size: 25px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transform: translateX(100px);
+    transition: transform .4s ease-in-out;
+}
+
+.front h1 {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+
+.flip:hover {
+    cursor: pointer;
+}
+
+.flip i {
+    font-size: 2rem
+}
+
+.container {
+    width: 100%;
+}
+.search-container {
+    height: 200px;
+    width: 100%;
+    padding-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/marvel-dc_crossover.jfif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-sizing: border-box; */
+}
+
+.search-bar input {
+    text-transform: lowercase;
+    padding: 2px 0 2px 20px;
+    color: rgba(119, 119, 119, 0.7);
+    outline: none;
+    width: 80%;
+    height: 80%;
+    margin-left: 20px;
+    border: none;
+    background-color: white;
+    border-left: 1px solid rgba(148, 148, 148);
+    font-size: 34px;
+}
+
+
+.search-bar {
+    background-color: white;
+    padding: 5px 40px 5px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    font-size: 40px;
+    width: 30%;
+    height: 30%;
+    justify-content: left;
+    color: rgba(119, 119, 119, 0.6);
+    transform: translateY(35px);
+}
+
+#dark-toggle {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    overflow: visible;
+    transition: background-color .2s ease-in-out;
+}
+
+/* #dark-toggle.dark-toggle {
+    background-color: var(--dark-secondary);
+    color: white;
+} */
+
+#dark-toggle:hover {
+    background-color: rgba(220, 220, 220, 0.459);
+    font-size: 1;
+    cursor: pointer;
+}
+
+#dark-toggle i {
+    font-size: 30px;
+    color:#000;
+    text-align: center;
+}

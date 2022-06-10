@@ -1,0 +1,2298 @@
+{
+    "marvelCharacters": [
+        {
+            "name": "Ajak",
+            "appearanceComics": "The Eternals #2",
+            "appearanceYear": 1976,
+            "width": "160px",
+            "movies": [
+                "Eternals (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/ajak.png"
+        },
+        {
+            "name": "Angel",
+            "appearanceComics": "The X-Men #1 (1963)",
+            "appearanceYear": 1963,
+            "width": "290px",
+            "movies": [
+                "X-Men: The Last Stand (2006)",
+                "X-Men: Days of Future Past (2014)",
+                "X-Men: Apocalypse (2016)"
+            ],
+            "imgSource": "images/marvel-images/characters/angel.png"
+        },
+        {
+            "name": "Abomination",
+            "appearanceComics": "Tales to Astonish #90",
+            "appearanceYear": 1967,
+            "copycat": "Doomsday",
+            "width": "250px",
+            "movies": [
+                "The Incredible Hulk (2008)"
+            ],
+            "imgSource": "images/marvel-images/characters/abomination.png"
+        },
+        {
+            "name": "Ancient One",
+            "appearanceComics": "Strange Tales #110",
+            "appearanceYear": 1963,
+            "width": "340px",
+            "movies": [
+                "Doctor Strange (2016)"
+            ],
+            "imgSource": "images/marvel-images/characters/ancient-one.png"
+        },
+        {
+            "name": "Ant-Man",
+            "appearanceComics": "Tales to Astonish #35",
+            "appearanceYear": 1963,
+            "copycat": "Atom",
+            "width": "340px",
+            "movies": [
+                "Ant-Man (2015)",
+                "Ant-Man and the Wasp (2018)",
+                "Ant-Man and the Wasp: Quantumania (2023)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/ant-man.png"
+        },
+        {
+            "name": "Aunt May",
+            "appearanceComics": "Amazing Fantasy #15",
+            "appearanceYear": 1962,
+            "width": "200px",
+            "movies": [
+                "Spider-Man (2002)",
+                "Spider-Man 2 (2004)",
+                "Spider-Man 3 (2007)",
+                "Captain America: Civil War (2016)",
+                "Spider-Man: Homecoming (2017)",
+                "Spider-Man: Far From Home (2019)",
+                "Avengers: Endgame (2019)",
+                "Spider-Man: No Way Home (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/aunt-may.png"
+        },
+        {
+            "name": "Aurora",
+            "appearanceComics": "The Uncanny X-Men #120",
+            "appearanceYear": 1979,
+            "copycat": "Stargirl",
+            "width": "250px",
+            "imgSource": "images/marvel-images/characters/aurora.png"
+        },
+        {
+            "name": "Avengers",
+            "appearanceComics": "The Avengers #1",
+            "appearanceYear": 1963,
+            "copycat": "Justice League",
+            "width": "270px",
+            "movies": [
+                "The Avengers (2012)",
+                "Avengers: Age of Ultron (2015)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/avengers.png"
+        },
+        {
+            "name": "Banshee",
+            "appearanceComics": "The Avengers #1",
+            "appearanceYear": 1967,
+            "copycat": "Silver Banshee",
+            "width": "170px",
+            "movies": [
+                "X-Men: First Class (2011)",
+                "X-Men: Days of Future Past (2014)"
+            ],
+            "imgSource": "images/marvel-images/characters/banshee.png"
+        },
+        {
+            "name": "Beast",
+            "appearanceComics": "The X-Men #1",
+            "appearanceYear": 1963,
+            "width": "290px",
+            "movies": [
+                "X-Men: First Class (2011)",
+                "X-Men: Days of Future Past (2014)",
+                "X-Men: Apocalypse (2016)",
+                "Deadpool 2 (2018)",
+                "Dark Phoenix (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/beast.png"
+        },
+        {
+            "name": "Beetle",
+            "appearanceComics": "\"Human Torch\" segment of Strange Tales #123",
+            "appearanceYear": 1964,
+            "copycat": "Blue Beetle",
+            "width": "320px",
+            "imgSource": "images/marvel-images/characters/beetle.png"
+        },
+        {
+            "name": "Black Cat",
+            "appearanceComics": "The Amazing Spider-Man #194",
+            "appearanceYear": 1979,
+            "copycat": "Catwoman",
+            "width": "380px",
+            "movies": [
+                "Spider-Man 2 (2004)",
+                "The Amazing Spider-Man 2 (2014)"
+            ],
+            "imgSource": "images/marvel-images/characters/black-cat.png"
+        },
+        {
+            "name": "Black Panther",
+            "appearanceComics": "Fantastic Four #52",
+            "appearanceYear": 1966,
+            "copycat": "Bronze Tiger",
+            "width": "250px",
+            "movies": [
+                "Captain America: Civil War (2016)",
+                "Black Panther (2018)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+    
+            ],
+            "imgSource": "images/marvel-images/characters/black-panther.png"
+        },
+        {
+            "name": "Black Widow",
+            "appearanceComics": "Mystic Comics #4",
+            "appearanceYear": 1940,
+            "copycat": "Black Canary",
+            "width": "250px",
+            "movies": [
+                "Iron Man 2 (2010)",
+                "The Avengers (2012)",
+                "Captain America: The Winter Soldier (2014)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Endgame (2019)",
+                "Black Widow (2021)"
+    
+            ],
+            "imgSource": "images/marvel-images/characters/black-widow.png"
+        },
+        {
+            "name": "Blizzard",
+            "appearanceComics": "Iron Man #86",
+            "appearanceYear": 1976,
+            "copycat": "Captain Cold",
+            "width": "270px",
+            "imgSource": "images/marvel-images/characters/blizzard.png"
+        },
+        {
+            "name": "Boomerang",
+            "appearanceComics": "Tales to Astonish #81",
+            "appearanceYear": 1966,
+            "copycat": "Captain Boomerang",
+            "width": "240px",
+            "imgSource": "images/marvel-images/characters/boomerang.png"
+        },
+        {
+            "name": "Bruce Banner",
+            "appearanceComics": "The Incredible Hulk #1",
+            "appearanceYear": 1962,
+            "width": "110px",
+            "movies": [
+                "Hulk (2003)",
+                "The Incredible Hulk (2008)",
+                "The Avengers (2012)",
+                "Iron Man 3 (2013)",
+                "Avengers: Age of Ultron (2015)",
+                "Thor: Ragnarok (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/bruce-banner.png"
+        },
+        {
+            "name": "Bullseye",
+            "appearanceComics": "Daredevil #131",
+            "appearanceYear": 1976,
+            "copycat": "Deadshot",
+            "width": "190px",
+            "movies": [
+                "Daredevil (2003)"
+            ],
+            "imgSource": "images/marvel-images/characters/bullseye.png"
+        },
+        {
+            "name": "Captain America",
+            "appearanceComics": " Captain America Comics #1",
+            "appearanceYear": 1941,
+            "copycat": "Commander Steel",
+            "width": "200px",
+            "movies": [
+                "Captain America: The First Avenger (2011)",
+                "The Avengers (2012)",
+                "Captain America: The Winter Soldier (2014)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Spider-Man: Homecoming (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/captain-america.png"
+        },
+        {
+            "name": "Captain Marvel",
+            "appearanceComics": " Captain America Comics #1",
+            "appearanceYear": 1953,
+            "width": "270px",
+            "copycat": "Power Girl",
+            "movies": [
+                "Captain Marvel (2019)",
+                "Avengers: Endgame (2019)",
+                "Shang-Chi and the Legend of the Ten Rings (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/captain-marvel.png"
+        },
+        {
+            "name": "Carnage",
+            "appearanceComics": "The Amazing Spider-Man #361",
+            "appearanceYear": 1992,
+            "width": "350px",
+            "movies": [
+                "Venom: Let There Be Carnage (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/carnage.png"
+        },
+        {
+            "name": "Celestials",
+            "appearanceComics": "The Eternals #1",
+            "appearanceYear": 1976,
+            "width": "250px",
+            "movies": [
+                "Guardians of the Galaxy (2014)",
+                "Guardians of the Galaxy Vol. 2 (2017)",
+                "Eternals (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/celestials.png"
+        },
+        {
+            "name": "Cyclops",
+            "appearanceComics": "The X-Men #1",
+            "appearanceYear": 1963,
+            "width": "300px",
+            "movies": [
+                "X-Men (2000)",
+                "X2 (2003)",
+                "X-Men: The Last Stand (2006)",
+                "X-Men Origins: Wolverine (2009)",
+                "X-Men: First Class (2011)",
+                "X-Men: Days of Future Past (2014)",
+                "X-Men: Apocalypse (2016)",
+                "Logan (2017)",
+                "Deadpool 2 (2018)",
+                "Dark Phoenix (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/cyclops.png"
+        },
+        {
+            "name": "Crossbones",
+            "appearanceComics": "Captain America #359",
+            "appearanceYear": 1989,
+            "width": "240px",
+            "copycat": "Bane",
+            "movies": [
+                "Captain America: The Winter Soldier (2014)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/crossbones.png"
+        },
+        {
+            "name": "Deadpool",
+            "appearanceComics": "The New Mutants #98",
+            "appearanceYear": 1991,
+            "width": "250px",
+            "copycat": "Deathstroke",
+            "movies": [
+                "X-Men Origins: Wolverine (2009)",
+                "Deadpool (2016)",
+                "Deadpool 2 (2018)"
+            ],
+            "imgSource": "images/marvel-images/characters/deadpool.png"
+        },
+        {
+            "name": "Doctor Doom",
+            "appearanceComics": "The Fantastic Four #5",
+            "appearanceYear": 1962,
+            "width": "300px",
+            "copycat": "Lord Havok",
+            "movies": [
+                "Fantastic Four (2005)",
+                "Fantastic Four: Rise of the Silver Surfer (2007)",
+                "Fantastic Four (2015)"
+            ],
+            "imgSource": "images/marvel-images/characters/doctor-doom.png"
+        },
+        {
+            "name": "Doctor Octopus",
+            "appearanceComics": "The Amazing Spider-Man #3",
+            "appearanceYear": 1963,
+            "width": "340px",
+            "copycat": "Gizmo",
+            "movies": [
+                "Spider-Man 2 (2004)",
+                "Spider-Man: No Way Home (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/doctor-octopus.png"
+        },
+        {
+            "name": "Doctor Strange",
+            "appearanceComics": "Strange Tales #110",
+            "appearanceYear": 1963,
+            "width": "300px",
+            "copycat": "Doctor Fate",
+            "movies": [
+                "Doctor Strange (2016)",
+                "Thor: Ragnarok (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Spider-Man: No Way Home (2021)",
+                "Doctor Strange in the Multiverse of Madness (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/doctor-strange.png"
+        },
+        {
+            "name": "Dormammu",
+            "appearanceComics": "Strange Tales #126",
+            "appearanceYear": 1963,
+            "width": "250px",
+            "copycat": "Dreamslayer",
+            "movies": [
+                "Doctor Strange (2016)"
+            ],
+            "imgSource": "images/marvel-images/characters/dormammu.png"
+        },
+        {
+            "name": "Drax",
+            "appearanceComics": "The Invincible Iron Man #55",
+            "appearanceYear": 1973,
+            "width": "215px",
+            "movies": [
+                "Guardians of the Galaxy (2014)",
+                "Guardians of the Galaxy Vol. 2 (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Thor: Love and Thunder (2022)",
+                "Guardians of the Galaxy Vol. 3 (2023)"
+            ],
+            "imgSource": "images/marvel-images/characters/drax.png"
+        },
+        {
+            "name": "Druig",
+            "appearanceComics": "The Eternals #11",
+            "appearanceYear": 1977,
+            "width": "140px",
+            "movies": [
+                "Eternals (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/druig.png"
+        },
+        {
+            "name": "Ego",
+            "appearanceComics": "Thor #132",
+            "appearanceYear": 1966,
+            "width": "300px",
+            "copycat": "Mogo",
+            "movies": [
+                "Guardians of the Galaxy Vol. 2 (2017)"
+            ],
+            "imgSource": "images/marvel-images/characters/ego.png"
+        },
+        {
+            "name": "Electro",
+            "appearanceComics": "The Amazing Spider-Man #9",
+            "appearanceYear": 1964,
+            "width": "320px",
+            "copycat": "Black Lightning",
+            "movies": [
+                "The Amazing Spider-Man 2 (2014)",
+                "Spider-Man: No Way Home (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/electro.png"
+        },
+        {
+            "name": "Eternity",
+            "appearanceComics": "Strange Tales #138",
+            "appearanceYear": 1965,
+            "width": "250px",
+            "copycat": "Kismet",
+            "movies": [
+                "Guardians of the Galaxy (2014)",
+                "Guardians of the Galaxy Vol. 2 (2017)"
+            ],
+            "imgSource": "images/marvel-images/characters/eternity.png"
+        },
+        {
+            "name": "Falcon",
+            "appearanceComics": "Captain America #117",
+            "appearanceYear": 1969,
+            "width": "200px",
+            "copycat": "Hawkman",
+            "movies": [
+                "Captain America: The Winter Soldier (2014)",
+                "Ant-Man (2015)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/falcon.png"
+        },
+        {
+            "name": "Firestar",
+            "appearanceComics": "Appeared in the animated series \"Spider-Man and His Amazing Friends\"",
+            "appearanceYear": 1981,
+            "width": "270px",
+            "copycat": "Starfire",
+            "imgSource": "images/marvel-images/characters/firestar.png"
+        },
+        {
+            "name": "Fury",
+            "appearanceComics": "Sgt. Fury and his Howling Commandos #1",
+            "appearanceYear": 1963,
+            "width": "200px",
+            "movies": [
+                "Iron Man (2008)",
+                "Iron Man 2 (2010)",
+                "Captain America: The First Avenger (2011)",
+                "Thor (2011)",
+                "The Avengers (2012)",
+                "Captain America: The Winter Soldier (2014)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain Marvel (2019)",
+                "Avengers: Endgame (2019)",
+                "Spider-Man: Far From Home (2019)",
+                "Ant-Man and the Wasp: Quantumania (2023)",
+                "The Marvels (2023)"
+            ],
+            "imgSource": "images/marvel-images/characters/fury.png"
+        },
+        {
+            "name": "Galactus",
+            "appearanceComics": "Fantastic Four #48",
+            "appearanceYear": 1966,
+            "width": "300px",
+            "copycat": "Imperiex",
+            "movies": [
+                "Fantastic Four: Rise of the Silver Surfer (2007)"
+            ],
+            "imgSource": "images/marvel-images/characters/galactus.png"
+        },
+        {
+            "name": "Gamora",
+            "appearanceComics": "Strange Tales #180",
+            "appearanceYear": 1975,
+            "width": "280px",
+            "movies": [
+                "Guardians of the Galaxy (2014)",
+                "Guardians of the Galaxy Vol. 2 (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/gamora.png"
+        },
+        {
+            "name": "Ghost Rider",
+            "appearanceComics": "Ghost Rider #1",
+            "appearanceYear": 1967,
+            "width": "320px",
+            "copycat": "Atomic Skull",
+            "movies": [
+                "Ghost Rider (2007)",
+                "Ghost Rider: Spirit of Vengeance (2011)"
+            ],
+            "imgSource": "images/marvel-images/characters/ghost-rider.png"
+        },
+        {
+            "name": "Gilgamesh",
+            "appearanceComics": "The Eternals #13",
+            "appearanceYear": 1977,
+            "width": "150px",
+            "movies": [
+                "Eternals (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/gilgamesh.png"
+        },
+        {
+            "name": "Gladiator",
+            "appearanceComics": "The X-Men #107",
+            "appearanceYear": 1977,
+            "width": "250px",
+            "imgSource": "images/marvel-images/characters/gladiator.png"
+        },
+        {
+            "name": "Green Goblin",
+            "appearanceComics": "The Amazing Spider-Man #14",
+            "appearanceYear": 1977,
+            "width": "180px",
+            "copycat": "Joker",
+            "movies": [
+                "Spider-Man (2002)",
+                "Spider-Man 2 (2004)",
+                "Spider-Man 3 (2007)",
+                "The Amazing Spider-Man 2 (2014)",
+                "Spider-Man: Into the Spider-Verse (2018)",
+                "Spider-Man: No Way Home (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/green-goblin.png"
+        },
+        {
+            "name": "Groot",
+            "appearanceComics": "Tales to Astonish #13",
+            "appearanceYear": 1960,
+            "width": "540px",
+            "movies": [
+                "Guardians of the Galaxy (2014)",
+                "Guardians of the Galaxy Vol. 2 (2017)",
+                "Thor: Love and Thunder (2022)",
+                "Guardians of the Galaxy Vol. 3 (2023)"
+            ],
+            "imgSource": "images/marvel-images/characters/groot.png"
+        },
+        {
+            "name": "Hawkeye",
+            "appearanceComics": "Tales of Suspense #57",
+            "appearanceYear": 1960,
+            "width": "340px",
+            "copycat": "Green Arrow",
+            "movies": [
+                "Thor (2011)",
+                "The Avengers (2012)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/hawkeye.png"
+        },
+        {
+            "name": "Heimdall",
+            "appearanceComics": "Journey into Mystery #85",
+            "appearanceYear": 1962,
+            "width": "140px",
+            "movies": [
+                "Thor (2011)",
+                "Thor: The Dark World (2013)",
+                "Avengers: Age of Ultron (2015)",
+                "Thor: Ragnarok (2017)",
+                "Avengers: Infinity War (2018)"
+            ],
+            "imgSource": "images/marvel-images/characters/heimdall.png"
+        },
+        {
+            "name": "Hulk",
+            "appearanceComics": "The Incredible Hulk",
+            "appearanceYear": 1962,
+            "width": "200px",
+            "copycat": "Solomon Grundy",
+            "movies": [
+                "Hulk (2003)",
+                "The Incredible Hulk (2008)",
+                "The Avengers (2012)",
+                "Iron Man 3 (2013)",
+                "Avengers: Age of Ultron (2015)",
+                "Thor: Ragnarok (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/hulk.png"
+        },
+        {
+            "name": "Human Torch",
+            "appearanceComics": "The Incredible Hulk",
+            "appearanceYear": 1961,
+            "width": "330px",
+            "copycat": "Firestorm",
+            "movies": [
+                "Fantastic Four (2005)",
+                "Fantastic Four: Rise of the Silver Surfer (2007)",
+                "Fantastic Four (2015)"
+            ],
+            "imgSource": "images/marvel-images/characters/human-torch.png"
+        },
+        {
+            "name": "Hydra",
+            "appearanceComics": "Strange Tales #135",
+            "appearanceYear": 1961,
+            "width": "250px",
+            "copycat": "Kobra",
+            "movies": [
+                "Captain America: The First Avenger (2011)",
+                "Captain America: The Winter Soldier (2014)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/hydra.png"
+        },
+        {
+            "name": "Hyperion",
+            "appearanceComics": "The Avengers #69",
+            "appearanceYear": 1969,
+            "width": "270px",
+            "copycat": "Superman",
+            "imgSource": "images/marvel-images/characters/hyperion.png"
+        },
+        {
+            "name": "Iceman",
+            "appearanceComics": "The X-Men #1",
+            "appearanceYear": 1963,
+            "width": "270px",
+            "copycat": "Icicle",
+            "movies": [
+                "X-Men (2000)",
+                "X2 (2003)",
+                "X-Men: The Last Stand (2006)",
+                "X-Men: Days of Future Past (2014)"
+            ],
+            "imgSource": "images/marvel-images/characters/iceman.png"
+        },
+        {
+            "name": "Ikaris",
+            "appearanceComics": "The Eternals #1",
+            "appearanceYear": 1976,
+            "width": "220px",
+            "movies": [
+                "Eternals (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/ikaris.png"
+        },
+        {
+            "name": "Impossible Man",
+            "appearanceComics": "Fantastic Four #11",
+            "appearanceYear": 1963,
+            "width": "240px",
+            "copycat": "Mr Mxyzptlk",
+            "imgSource": "images/marvel-images/characters/impossible-man.png"
+        },
+        {
+            "name": "Iron Man",
+            "appearanceComics": "Tales of Suspense #39",
+            "appearanceYear": 1963,
+            "width": "330px",
+            "copycat": "Cyborg",
+            "movies": [
+                "The Incredible Hulk (2008)",
+                "Iron Man(2008)",
+                "Iron Man 2 (2010)",
+                "The Avengers (2012)",
+                "Iron Man 3 (2013)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Spider-Man: Homecoming (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Spider-Man: Far From Home (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/iron-man.png"
+        },
+        {
+            "name": "Jarvis",
+            "appearanceComics": "Tales of Suspense #59",
+            "appearanceYear": 1964,
+            "width": "330px",
+            "copycat": "Alfred",
+            "movies": [
+                "Iron Man(2008)",
+                "Iron Man 2 (2010)",
+                "The Avengers (2012)",
+                "Iron Man 3 (2013)",
+                "Avengers: Age of Ultron (2015)"
+            ],
+            "imgSource": "images/marvel-images/characters/jarvis.png"
+        },
+        {
+            "name": "Kaecillius",
+            "appearanceComics": "Strange Tales Vol. 1, #130",
+            "appearanceYear": 1965,
+            "width": "280px",
+            "movies": [
+                "Doctor Strange (2016)"
+            ],
+            "imgSource": "images/marvel-images/characters/kaecillius.png"
+        },
+        {
+            "name": "Kate Bishop",
+            "appearanceComics": "Young Avengers #1",
+            "first-appearrance": 2005,
+            "width": "190px",
+            "copycat": "Artemis",
+            "imgSource": "images/marvel-images/characters/kate-bishop.png"
+        },
+        {
+            "name": "Kingo",
+            "appearanceComics": "Young Avengers #1",
+            "appearanceYear": 2005,
+            "width": "125px",
+            "movies": [
+                "Eternals (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/kingo.png"
+        },
+        {
+            "name": "Lizard",
+            "appearanceComics": "The Amazing Spider-Man #6",
+            "appearanceYear": 1963,
+            "width": "400px",
+            "copycat": "Killer Croc",
+            "movies": [
+                "Spider-Man 2 (2004)",
+                "Spider-Man 3 (2007)",
+                "The Amazing Spider-Man (2012)",
+                "Spider-Man: No Way Home (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/lizard.png"
+        },
+        {
+            "name": "Loki",
+            "appearanceComics": "Journey into Mystery #85",
+            "appearanceYear": 1962,
+            "width": "450px",
+            "movies": [
+                "Thor (2011)",
+                "The Avengers (2012)",
+                "Thor: The Dark World (2013)",
+                "Thor: Ragnarok (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/loki.png"
+        },
+        {
+            "name": "Magneto",
+            "appearanceComics": "The X-Men #1",
+            "appearanceYear": 1963,
+            "width": "235px",
+            "copycat": "Doctor Polaris",
+            "movies": [
+                "X-Men (2000)",
+                "X2 (2003)",
+                "X-Men: The Last Stand (2006)",
+                "X-Men: First Class (2011)",
+                "The Wolverine (2014)",
+                "X-Men: Apocalypse (2016)",
+                "Dark Phoenix (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/magneto.png"
+        },
+        {
+            "name": "Makkari",
+            "appearanceComics": "The Eternals #1",
+            "appearanceYear": 1976,
+            "width": "260px",
+            "movies": [
+                "Eternals (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/makkari.png"
+        },
+        {
+            "name": "Man-Thing",
+            "appearanceComics": "Savage Tales #1",
+            "appearanceYear": 1971,
+            "width": "290px",
+            "copycat": "Swamp Thing",
+            "movies": [
+                "Man-Thing (2005)"
+            ],
+            "imgSource": "images/marvel-images/characters/man-thing.png"
+        },
+        {
+            "name": "Mantis",
+            "appearanceComics": "The Avengers #112",
+            "appearanceYear": 1973,
+            "width": "290px",
+            "copycat": "Swamp Thing",
+            "movies": [
+                "Guardians of the Galaxy Vol. 2 (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Thor: Love and Thunder (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/mantis.png"
+        },
+        {
+            "name": "MJ",
+            "alias": "Mary Jane",
+            "appearanceComics": "The Amazing Spider-Man #25",
+            "appearanceYear": 1965,
+            "width": "195px",
+            "movies": [
+                "Spider-Man (2002)",
+                "Spider-Man 2 (2004)",
+                "Spider-Man 3 (2007)",
+                "Spider-Man: Homecoming (2017)",
+                "Spider-Man: Far From Home (2019)",
+                "Spider-Man: No Way Home (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/mj.png"
+        },
+        {
+            "name": "Moon Knight",
+            "appearanceComics": "Werewolf by Night #32",
+            "appearanceYear": 1975,
+            "width": "220px",
+            "copycat": "Batman",
+            "imgSource": "images/marvel-images/characters/moon-knight.png"
+        },
+        {
+            "name": "Moonstone",
+            "appearanceComics": "Captain America (vol. 1) #192",
+            "appearanceYear": 1975,
+            "width": "275px",
+            "copycat": "Star Sapphire",
+            "imgSource": "images/marvel-images/characters/moonstone.png"
+        },
+        {
+            "name": "Morbius",
+            "appearanceComics": "The Amazing Spider-Man #101",
+            "appearanceYear": 1971,
+            "width": "300px",
+            "movies":[
+                "Morbius (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/morbius.png"
+        },
+        {
+            "name": "Mr Fantastic",
+            "alias": "Mister Fantastic",
+            "appearanceComics": "The Fantastic Four #1",
+            "appearanceYear": 1961,
+            "width": "225px",
+            "copycat": "Plastic Man",
+            "movies": [
+                "Fantastic Four (2005)",
+                "Fantastic Four: Rise of the Silver Surfer (2007)",
+                "Fantastic Four (2015)"
+            ],
+            "imgSource": "images/marvel-images/characters/mr-fantastic.png"
+        },
+        {
+            "name": "Mystique",
+            "appearanceComics": "Ms. Marvel #16",
+            "appearanceYear": 1978,
+            "width": "270px",
+            "movies": [
+                "X-Men (2000)",
+                "X2 (2003)",
+                "X-Men: The Last Stand (2006)",
+                "X-Men: First Class (2011)",
+                "X-Men: Days of Future Past (2014)",
+                "X-Men: Apocalypse (2016)",
+                "Darl Pheonix (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/mystique.png"
+        },
+        {
+            "name": "Namor",
+            "appearanceComics": "Marvel Comics #1",
+            "appearanceYear": 1961,
+            "width": "310px",
+            "copycat": "Aquaman",
+            "imgSource": "images/marvel-images/characters/namor.png"
+        },
+        {
+            "name": "Nebula",
+            "appearanceComics": "The Avengers #257",
+            "appearanceYear": 1985,
+            "width": "280px",
+            "movies": [
+                "Guardians of the Galaxy (2014)",
+                "Guardians of the Galaxy Vol. 2 (2017)",
+                "Avengers: Endgame (2019)",
+                "Thor: Love and Thunder (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/nebula.png"
+        },
+        {
+            "name": "Night Crawler",
+            "appearanceComics": "Giant-Size X-Men #1",
+            "appearanceYear": 1975,
+            "width": "340px",
+            "copycat": "Kid Devil",
+            "movies": [
+                "X-Men (2000)",
+                "X2 (2003)",
+                "X-Men: Apocalypse (2016)",
+                "Deadpool 2 (2018)",
+                "Darl Pheonix (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/night-crawler.png"
+        },
+        {
+            "name": "Nova",
+            "appearanceComics": "The Man Called Nova #1",
+            "appearanceYear": 1976,
+            "width": "200px",
+            "copycat": "Green Lantern",
+            "imgSource": "images/marvel-images/characters/nova.png"
+        },
+        {
+            "name": "Peter Wisdom",
+            "appearanceComics": "Excalibur vol. 1 #86",
+            "appearanceYear": 1995,
+            "width": "240px",
+            "copycat": "John Constantine",
+            "imgSource": "images/marvel-images/characters/peter-wisdom.png"
+        },
+        {
+            "name": "Phil Coulson",
+            "appearanceComics": "Battle Scars #6",
+            "appearanceYear": 2012,
+            "width": "280px",
+            "movies": [
+                "Iron Man (2008)",
+                "Iron Man 2 (2010)",
+                "Thor (2011)",
+                "The Avengers (2012)",
+                "Captain Marvel (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/phil-coulson.png"
+        },
+        {
+            "name": "Professor X",
+            "appearanceComics": "The X-Men #1",
+            "appearanceYear": 1963,
+            "width": "270px",
+            "movies": [
+                "X-Men (2000)",
+                "X2 (2003)",
+                "X-Men: The Last Stand (2006)",
+                "X-Men: First Class (2011)",
+                "The Avengers (2012)",
+                "X-Men Origins: Wolverine (2009)",
+                "The Wolverine (2014)",
+                "X-Men: Apocalypse (2016)",
+                "Logan (2017)",
+                "Deadpool 2 (2018)",
+                "Dark Phoenix (2019)",
+                "Doctor Strange in the Multiverse of Madness (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/professor-x.png"
+        },
+        {
+            "name": "Quasar",
+            "appearanceComics": "Captain America #217",
+            "appearanceYear": 1978,
+            "width": "150px",
+            "imgSource": "images/marvel-images/characters/quasar.png"
+        },
+        {
+            "name": "Quicksilver",
+            "appearanceComics": "The Uncanny X-Men #4",
+            "appearanceYear": 1964,
+            "width": "190px",
+            "copycat": "The Flash",
+            "movies": [
+                "Captain America: The Winter Soldier (2014)",
+                "X-Men: Days of Future Past (2014)",
+                "Avengers: Age of Ultron (2015)",
+                "X-Men: Apocalypse (2016)",
+                "Deadpool 2 (2018)",
+                "Dark Phoenix (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/quicksilver.png"
+        },
+        {
+            "name": "Red Skull",
+            "appearanceComics": "Captain America Comics #1",
+            "appearanceYear": 1941,
+            "width": "220px",
+            "copycat": "Black Mask",
+            "movies": [
+                "Captain America: The First Avenger (2011)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/redskull.png"
+        },
+        {
+            "name": "Rocket Racoon",
+            "appearanceComics": "Marvel Preview #7",
+            "appearanceYear": 1941,
+            "width": "320px",
+            "copycat": "Dex-Starr",
+            "movies": [
+                "Guardians of the Galaxy (2014)",
+                "Guardians of the Galaxy Vol. 2 (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Thor: Love and Thunder (2022)",
+                "Guardians of the Galaxy Vol. 3 (2023)"
+            ],
+            "imgSource": "images/marvel-images/characters/rocket-racoon.png"
+        },
+        {
+            "name": "Runner",
+            "appearanceComics": "We're sorry but this character was running too fast through the  comics to find the one where he showed up for the first time.",
+            "appearanceYear": 1985,
+            "width": "140px",
+            "copycat": "Godspeed",
+            "imgSource": "images/marvel-images/characters/runner.png"
+        },
+        {
+            "name": "Sabretooth",
+            "appearanceComics": "Iron Fist #14",
+            "appearanceYear": 1985,
+            "width": "440px",
+            "movies": [
+                "X-Men (2000)",
+                "X-Men Origins: Wolverine (2009)",
+                "Logan (2017)"
+            ],
+            "imgSource": "images/marvel-images/characters/sabretooth.png"
+        },
+        {
+            "name": "Sandman",
+            "appearanceComics": "The Amazing Spider-Man #4",
+            "appearanceYear": 1963,
+            "width": "180px",
+            "copycat": "Clayface",
+            "movies": [
+                "Spider-Man 3 (2007)",
+                "Spider-Man: No Way Home (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/sandman.png"
+        },
+        {
+            "name": "Scarcecrow",
+            "appearanceComics": "Tales of Suspense #51",
+            "appearanceYear": 1963,
+            "width": "195px",
+            "copycat": "Scarcecrow",
+            "imgSource": "images/marvel-images/characters/scarcecrow.png"
+        },
+        {
+            "name": "Scarlet Witch",
+            "alias": "Wanda",
+            "appearanceComics": "The X-Men #4",
+            "appearanceYear": 1963,
+            "width": "280px",
+            "copycat": "Zatanna",
+            "movies": [
+                "Captain America: The Winter Soldier (2014)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Doctor Strange in the Multiverse of Madness (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/scarlet-witch.png"
+        },
+        {
+            "name": "Sentry",
+            "appearanceComics": "The Sentry #1",
+            "appearanceYear": 2000,
+            "width": "280px",
+            "copycat": "Shazam",
+            "imgSource": "images/marvel-images/characters/sentry.png"
+        },
+        {
+            "name": "Sif",
+            "appearanceComics": "Journey Into Mystery #102",
+            "appearanceYear": 1964,
+            "width": "300px",
+            "copycat": "Wonder Woman",
+            "movies": [
+                "Thor (2011)",
+                "Thor: The Dark World (2013)",
+                "Thor: Ragnarok (2017)",
+                "Thor: Love and Thunder (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/sif.png"
+        },
+        {
+            "name": "Silver Surfer",
+            "appearanceComics": "Fantastic Four #48",
+            "appearanceYear": 1966,
+            "width": "290px",
+            "copycat": "Black Racer",
+            "movies": [
+                "Fantastic Four: Rise of the Silver Surfer (2007)"
+            ],
+            "imgSource": "images/marvel-images/characters/silver-surfer.png"
+        },
+        {
+            "name": "Spider-Gwen",
+            "alias": "Ghost-Spider",
+            "appearanceComics": "Edge of Spider-Verse #2",
+            "appearanceYear": 2014,
+            "width": "260px",
+            "movies": [
+                "Spider-Man: Into the Spider-Verse (2018)"
+            ],
+            "imgSource": "images/marvel-images/characters/spider-gwen.png"
+        },
+        {
+            "name": "Spider-Man",
+            "appearanceComics": "Amazing Fantasy #15",
+            "appearanceYear": 1962,
+            "width": "300px",
+            "copycat": "Black Spider",
+            "movies": [
+                "Spider-Man (2002)",
+                "Spider-Man 2 (2004)",
+                "Spider-Man 3 (2007)",
+                "Captain America: Civil War (2016)",
+                "Spider-Man: Homecoming (2017)",
+                "Spider-Man: Into the Spider-Verse (2018)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Spider-Man: Far From Home (2019)",
+                "Spider-Man: No Way Home (2021)"
+            ],
+            "imgSource": "images/marvel-images/characters/spider-man.png"
+        },
+        {
+            "name": "Spider-Woman",
+            "appearanceComics": "Marvel Spotlight #32",
+            "appearanceYear": 1977,
+            "width": "310px",
+            "imgSource": "images/marvel-images/characters/spider-woman.png"
+        },
+        {
+            "name": "Star-Lord",
+            "alias": "Peter Quill",
+            "appearanceComics": "Marvel Preview #4",
+            "appearanceYear": 1976,
+            "width": "390px",
+            "copycat": "Adam Strange",
+            "movies": [
+                "Guardians of the Galaxy (2014)",
+                "Guardians of the Galaxy Vol. 2 (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Thor: Love and Thunder (2022)",
+                "Guardians of the Galaxy Vol. 3 (2023)"
+            ],
+            "imgSource": "images/marvel-images/characters/star-lord.png"
+        },
+        {
+            "name": "Storm",
+            "appearanceComics": "Giant-Size X-Men #1",
+            "appearanceYear": 1975,
+            "width": "220px",
+            "movies": [
+                "X-Men (2000)",
+                "X2 (2003)",
+                "X-Men: The Last Stand (2006)",
+                "X-Men: Days of Future Past (2014)",
+                "X-Men: Apocalypse (2016)",
+                "Dark Phoenix (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/storm.png"
+        },
+        {
+            "name": "Super-Adaptoid",
+            "appearanceComics": "Tales of Suspense #82",
+            "appearanceYear": 1966,
+            "width": "190px",
+            "copycat": "Amazo",
+            "imgSource": "images/marvel-images/characters/super-adaptoid.png"
+        },
+        {
+            "name": "Surtur",
+            "appearanceComics": "Journey into Mystery #97",
+            "appearanceYear": 1963,
+            "width": "265px",
+            "copycat": "Trigon",
+            "movies": [
+                "Thor: Ragnarok (2017)"
+            ],
+            "imgSource": "images/marvel-images/characters/surtur.png"
+        },
+        {
+            "name": "Thanos",
+            "appearanceComics": "The Invincible Iron Man #55",
+            "appearanceYear": 1973,
+            "width": "160px",
+            "copycat": "Darkseid",
+            "movies": [
+                "The Avengers (2012)",
+                "Guardians of the Galaxy (2014)",
+                "Avengers: Age of Ultron (2015)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/thanos.png"
+        },
+        {
+            "name": "Thing",
+            "appearanceComics": "The Fantastic Four #1",
+            "appearanceYear": 1961,
+            "width": "280px",
+            "copycat": "Cinderblock",
+            "movies": [
+                "Fantastic Four (2005)",
+                "Fantastic Four: Rise of the Silver Surfer (2007)",
+                "Fantastic Four (2015)"
+            ],
+            "imgSource": "images/marvel-images/characters/thing.png"
+        },
+        {
+            "name": "Thor",
+            "appearanceComics": "Journey into Mystery #83",
+            "appearanceYear": 1962,
+            "width": "260px",
+            "movies": [
+                "Thor (2011)",
+                "The Avengers (2012)",
+                "Thor: The Dark World (2013)",
+                "Avengers: Age of Ultron (2015)",
+                "Doctor Strange (2016)",
+                "Thor: Ragnarok (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Thor: Love and Thunder (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/thor.png"
+        },
+        {
+            "name": "Tiger Shark",
+            "appearanceComics": "Prince Namor, the Sub-Mariner #5",
+            "appearanceYear": 1968,
+            "width": "180px",
+            "copycat": "King Shark",
+            "imgSource": "images/marvel-images/characters/tiger-shark.png"
+        },
+        {
+            "name": "Tigra",
+            "appearanceComics": "The Claws of the Cat #1",
+            "appearanceYear": 1972,
+            "width": "260px",
+            "copycat": "Cheetah",
+            "imgSource": "images/marvel-images/characters/tigra.png"
+        },
+        {
+            "name": "Tony Stark",
+            "appearanceComics": "Tales of Suspense #39",
+            "appearanceYear": 1963,
+            "width": "315px",
+            "copycat": "Bruce Wayne",
+            "movies": [
+                "The Incredible Hulk (2008)",
+                "Iron Man(2008)",
+                "Iron Man 2 (2010)",
+                "The Avengers (2012)",
+                "Iron Man 3 (2013)",
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Spider-Man: Homecoming (2017)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Spider-Man: Far From Home (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/tony-stark.png"
+        },
+        {
+            "name": "Ultron",
+            "appearanceComics": "The Avengers #55",
+            "appearanceYear": 1968,
+            "width": "370px",
+            "copycat": "Brainiac",
+            "movies": [
+                "Avengers: Age of Ultron (2015)"
+            ],
+            "imgSource": "images/marvel-images/characters/ultron.png"
+        },
+        {
+            "name": "Venom",
+            "appearanceComics": "The Amazing Spider-Man #252",
+            "appearanceYear": 1968,
+            "width": "240px",
+            "movies": [
+                "Spider-Man 3 (2007)",
+                "Venom: Let There Be Carnage (2021)",
+                "Venom (2018)"
+            ],
+            "imgSource": "images/marvel-images/characters/venom.png"
+        },
+        {
+            "name": "Vision",
+            "appearanceComics": "The Avengers #57",
+            "appearanceYear": 1968,
+            "width": "245px",
+            "copycat": "Martian Manhunter",
+            "movies": [
+                "Avengers: Age of Ultron (2015)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Infinity War (2018)"
+            ],
+            "imgSource": "images/marvel-images/characters/vision.png"
+        },
+        {
+            "name": "Wasp",
+            "appearanceComics": "Tales to Astonish #44",
+            "appearanceYear": 1963,
+            "width": "245px",
+            "copycat": "Bumblebee",
+            "movies": [
+                "Ant-Man and the Wasp (2018)",
+                "Avengers: Endgame (2019)",
+                "Ant-Man and the Wasp: Quantumania (2023)"
+            ],
+            "imgSource": "images/marvel-images/characters/wasp.png"
+        },
+        {
+            "name": "Winter Soldier",
+            "appearanceComics": "Captain America Comics #1",
+            "appearanceYear": 1941,
+            "width": "185px",
+            "copycat": "Red Hood",
+            "movies": [
+                "Captain America: The Winter Soldier (2014)",
+                "Captain America: Civil War (2016)",
+                "Avengers: Infinity War (2018)",
+                "Black Panther (2018)",
+                "Avengers: Endgame (2019)"
+            ],
+            "imgSource": "images/marvel-images/characters/winter-soldier.png"
+        },
+        {
+            "name": "Wolverine",
+            "alias": "Logan",
+            "appearanceComics": "The Incredible Hulk #180",
+            "appearanceYear": 1974,
+            "width": "430px",
+            "copycat": "Timber Wolf",
+            "movies": [
+                "X-Men (2000)",
+                "X2 (2003)",
+                "X-Men: The Last Stand (2006)",
+                "X-Men Origins: Wolverine (2009)",
+                "The Wolverine (2014)",
+                "Logan (2017)",
+                "X-Men: First Class (2011)",
+                "X-Men: Days of Future Past (2014)",
+                "X-Men: Apocalypse (2016)",
+                "Dark Phoenix (2019)",
+                "Deadpool (2016)",
+                "Deadpool 2 (2018)"
+            ],
+            "imgSource": "images/marvel-images/characters/wolverine.png"
+        },
+        {
+            "name": "Wong",
+            "appearanceComics": "Strange Tales #110",
+            "appearanceYear": 1963,
+            "width": "250px",
+            "movies": [
+                "Doctor Strange (2016)",
+                "Avengers: Infinity War (2018)",
+                "Avengers: Endgame (2019)",
+                "Shang-Chi and the Legend of the Ten Rings (2021)",
+                "Spider-Man: No Way Home (2021)",
+                "Doctor Strange in the Multiverse of Madness (2022)"
+            ],
+            "imgSource": "images/marvel-images/characters/wong.png"
+        },
+        {
+            "name": "X-23",
+            "alias": "Laura Kinney",
+            "appearanceComics": "NYX",
+            "appearanceYear": 2004,
+            "width": "250px",
+            "copycat": "Scandal Savage",
+            "movies": [
+                "Logan (2017)"
+            ],
+            "imgSource": "images/marvel-images/characters/x-23.png"
+        },
+        {
+            "name": "X-Men",
+            "appearanceComics": "The X-Men #1",
+            "appearanceYear": 1963,
+            "width": "270px",
+            "copycat": "Doom Patrol",
+            "movies": [
+                "Logan (2017)"
+            ],
+            "imgSource": "images/marvel-images/characters/xmen.png"
+        }
+    ],
+
+    "dcCharacters": [
+        {
+            "name": "Abin Sur",
+            "appearanceComics": "Showcase #22",
+            "appearanceYear": 1959,
+            "width": "300px",
+            "movies": [
+                "Green Lantern (2011)"
+            ],
+            "imgSource": "images/dc-images/characters/abin-sur.png"
+        },
+        {
+            "name": "Adam Strange",
+            "appearanceComics": "Showcase #17",
+            "appearanceYear": 1958,
+            "width": "250px",
+            "copycat": "Star-Lord",
+            "imgSource": "images/dc-images/characters/adam-strange.png"
+        },
+        {
+            "name": "Alfred",
+            "appearanceComics": "Batman #16",
+            "appearanceYear": 1943,
+            "width": "170px",
+            "copycat": "Jarvis",
+            "movies": [
+                "Batman Begins (2005)",
+                "The Dark Knight (2008)",
+                "The Dark Knight Rises (2012)",
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Justice League (2017)",
+                "The Batman (2022)"
+            ],
+            "imgSource": "images/dc-images/characters/alfred.png"
+        },
+        {
+            "name": "Amazo",
+            "appearanceComics": "The Brave and the Bold #30",
+            "appearanceYear": 1960,
+            "width": "270px",
+            "copycat": "Super-Adaptoid",
+            "imgSource": "images/dc-images/characters/amazo.png"
+        },
+        {
+            "name": "Aquagirl",
+            "appearanceComics": "Aquaman #33",
+            "appearanceYear": 1967,
+            "width": "115px",
+            "imgSource": "images/dc-images/characters/aquagirl.png"
+        },
+        {
+            "name": "Aqualad",
+            "appearanceComics": "Adventure Comics #269",
+            "appearanceYear": 1960,
+            "width": "190px",
+            "imgSource": "images/dc-images/characters/aqualad.png"
+        },
+        {
+            "name": "Aquaman",
+            "appearanceComics": "More Fun Comics #73",
+            "appearanceYear": 1941,
+            "width": "190px",
+            "copycat": "Namor",
+            "movies": [
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Justice League (2017)",
+                "Aquaman (2018)",
+                "Zack Snyder's Justice League (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/aquaman.png"
+        },
+        {
+            "name": "Artemis",
+            "appearanceComics": "Infinity, Inc. #34",
+            "appearanceYear": 1987,
+            "width": "240px",
+            "copycat": "Kate Bishop",
+            "imgSource": "images/dc-images/characters/artemis.png"
+        },
+        {
+            "name": "Atom",
+            "appearanceComics": "All-American Publications' All-American Comics #19",
+            "appearanceYear": 1940,
+            "width": "250px",
+            "copycat": "Ant-Man",
+            "imgSource": "images/dc-images/characters/atom.png"
+        },
+        {
+            "name": "Atomic Skull",
+            "appearanceComics": "Superman #323",
+            "appearanceYear": 1978,
+            "width": "220px",
+            "copycat": "Ghost Rider",
+            "imgSource": "images/dc-images/characters/atomic-skull.png"
+        },
+        {
+            "name": "Atrocitus",
+            "appearanceComics": "Green Lantern vol. 4 #25",
+            "appearanceYear": 2007,
+            "width": "270px",
+            "imgSource": "images/dc-images/characters/atrocitus.png"
+        },
+        {
+            "name": "Bane",
+            "appearanceComics": "Batman: Vengeance of Bane #1",
+            "appearanceYear": 1993,
+            "width": "270px",
+            "copycat": "Crossbones",
+            "movies": [
+                "The Dark Knight Rises (2012)"
+            ],
+            "imgSource": "images/dc-images/characters/bane.png"
+        },
+        {
+            "name": "Batgirl",
+            "appearanceComics": "Detective Comics #359",
+            "appearanceYear": 1967,
+            "width": "270px",
+            "movies": [
+                "Batgirl (2022)"
+            ],
+            "imgSource": "images/dc-images/characters/batgirl.png"
+        },
+        {
+            "name": "Batman",
+            "appearanceComics": "Detective Comics #27",
+            "appearanceYear": 1939,
+            "width": "320px",
+            "copycat": "Moon Knight",
+            "movies": [
+                "Batman Begins (2005)",
+                "The Dark Kate (2008)",
+                "The Dark Knight Rises (2012)",
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Suicide Squad (2016)",
+                "Justice League (2017)",
+                "Zack Snyder's Justice League (2021)",
+                "Batgirl (2022)",
+                "The Batman (2022)", 
+                "The Flash (2023)"
+            ],
+            "imgSource": "images/dc-images/characters/batman.png"
+        },
+        {
+            "name": "Beast Boy",
+            "appearanceComics": "The Doom Patrol #99",
+            "appearanceYear": 1965,
+            "width": "290px",
+            "imgSource": "images/dc-images/characters/beast-boy.png"
+        },
+        {
+            "name": "Billy Numerous",
+            "appearanceComics": "Catwoman #78",
+            "appearanceYear": 2008,
+            "width": "310px",
+            "imgSource": "images/dc-images/characters/billy-numerous.png"
+        },
+        {
+            "name": "Black Canaary",
+            "appearanceComics": "Flash Comics #86",
+            "appearanceYear": 1947,
+            "width": "310px",
+            "copycat": "Black Widow",
+            "imgSource": "images/dc-images/characters/black-canary.png"
+        },
+        {
+            "name": "Black Lightning",
+            "appearanceComics": "Black Lightning #1",
+            "appearanceYear": 1977,
+            "width": "225px",
+            "copycat": "Electro",
+            "imgSource": "images/dc-images/characters/black-lightning.png"
+        },
+        {
+            "name": "Black Mask",
+            "appearanceComics": "Batman #386",
+            "appearanceYear": 1977,
+            "width": "210px",
+            "copycat": "Red Skull",
+            "movies": [
+                "Birds of Prey (2020)"
+            ],
+            "imgSource": "images/dc-images/characters/black-mask.png"
+        },
+        {
+            "name": "Black Racer",
+            "appearanceComics": "New Gods #3",
+            "appearanceYear": 1971,
+            "width": "240px",
+            "copycat": "Silver Surfer",
+            "imgSource": "images/dc-images/characters/black-racer.png"
+        },
+        {
+            "name": "Black Spider",
+            "appearanceComics": "Detective Comics #463",
+            "appearanceYear": 1976,
+            "width": "270px",
+            "copycat": "Spider-Man",
+            "imgSource": "images/dc-images/characters/black-spider.png"
+        },
+        {
+            "name": "Blue Beetle",
+            "appearanceComics": "Mystery Men Comics #1",
+            "appearanceYear": 1939,
+            "width": "300px",
+            "copycat": "Beetle",
+            "imgSource": "images/dc-images/characters/blue-beetle.png"
+        },
+        {
+            "name": "Brainiac",
+            "appearanceComics": "Action Comics #242",
+            "appearanceYear": 1958,
+            "width": "230px",
+            "copycat": "Ultron",
+            "imgSource": "images/dc-images/characters/brainiac.png"
+        },
+        {
+            "name": "Bronze Tiger",
+            "appearanceComics": "Richard Dragon, Kung Fu Fighter #1",
+            "appearanceYear": 1975,
+            "width": "190px",
+            "copycat": "Black Panther",
+            "imgSource": "images/dc-images/characters/bronze-tiger.png"
+        },
+        {
+            "name": "Bruce Wayne",
+            "appearanceComics": "Detective Comics #27",
+            "appearanceYear": 1975,
+            "width": "245px",
+            "copycat": "Tony Stark",
+            "movies": [
+                "Batman Begins (2005)",
+                "The Dark Kate (2008)",
+                "The Dark Knight Rises (2012)",
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Suicide Squad (2016)",
+                "Justice League (2017)",
+                "Zack Snyder's Justice League (2021)",
+                "Batgirl (2022)",
+                "The Batman (2022)", 
+                "The Flash (2023)"
+            ],
+            "imgSource": "images/dc-images/characters/bruce-wayne.png"
+        },
+        {
+            "name": "Bumblebee",
+            "appearanceComics": "Teen Titans #45",
+            "appearanceYear": 1976,
+            "width": "330px",
+            "copycat": "Wasp",
+            "imgSource": "images/dc-images/characters/bumblebee.png"
+        },
+        {
+            "name": "Captain Boomerang",
+            "appearanceComics": "The Flash #117",
+            "appearanceYear": 1960,
+            "width": "250px",
+            "copycat": "Boomerang",
+            "movies": [
+                "Suicide Squad (2016)",
+                "The Suicide Squad (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/captain-boomerang.png"
+        },
+        {
+            "name": "Captain Cold",
+            "appearanceComics": "Showcase #8",
+            "appearanceYear": 1957,
+            "width": "130px",
+            "copycat": "Blizzard",
+            "imgSource": "images/dc-images/characters/captain-cold.png"
+        },
+        {
+            "name": "Catwoman",
+            "appearanceComics": "Batman #1",
+            "appearanceYear": 1940,
+            "width": "330px",
+            "copycat": "Black Cat",
+            "movies": [
+                "Catwoman (2004)",
+                "The Dark Knight Rises (2012)",
+                "The Batman (2022)"
+            ],
+            "imgSource": "images/dc-images/characters/catwoman.png"
+        },
+        {
+            "name": "Cheetah",
+            "appearanceComics": "Wonder Woman #6",
+            "appearanceYear": 1943,
+            "width": "315px",
+            "copycat": "Tigra",
+            "movies": [
+                "Wonder Woman 1984 (2020)"
+            ],
+            "imgSource": "images/dc-images/characters/cheetah.png"
+        },
+        {
+            "name": "Cinderblock",
+            "appearanceComics": "Titans (Vol. 2) #17",
+            "appearanceYear": 2009,
+            "width": "230px",
+            "copycat": "Thing",
+            "imgSource": "images/dc-images/characters/cinderblock.png"
+        },
+        {
+            "name": "Clayface",
+            "appearanceComics": "Detective Comics #40",
+            "appearanceYear": 1940,
+            "width": "290px",
+            "copycat": "Sandman",
+            "imgSource": "images/dc-images/characters/clayface.png"
+        },
+        {
+            "name": "Commander Steel",
+            "appearanceComics": "Steel, The Indestructible Man #1",
+            "appearanceYear": 1978,
+            "width": "160px",
+            "copycat": "Captain America",
+            "imgSource": "images/dc-images/characters/commander-steel.png"
+        },
+        {
+            "name": "Cyborg",
+            "appearanceComics": "DC Comics Presents #26",
+            "appearanceYear": 1980,
+            "width": "210px",
+            "copycat": "Iron Man",
+            "movies": [
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Justice League (2017)",
+                "Zack Snyder's Justice League (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/cyborg.png"
+        },
+        {
+            "name": "Darkseid",
+            "appearanceComics": "Superman's Pal Jimmy Olsen #134",
+            "appearanceYear": 1970,
+            "width": "150px",
+            "copycat": "Thanos",
+            "movies": [
+                "Zack Snyder's Justice League (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/darkseid.png"
+        },
+        {
+            "name": "Deadshot",
+            "appearanceComics": "Batman #59",
+            "appearanceYear": 1950,
+            "width": "170px",
+            "copycat": "Bullseye",
+            "movies": [
+                "Suicide Squad (2016)",
+                "The Suicide Squad (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/deadshot.png"
+        },
+        {
+            "name": "Deathstroke",
+            "appearanceComics": "The New Teen Titans #2",
+            "appearanceYear": 1980,
+            "width": "170px",
+            "copycat": "Deadpool",
+            "movies": [
+                "Justice League (2017)",
+                "Zack Snyder's Justice League (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/deathstroke.png"
+        },
+        {
+            "name": "Dex-Starr",
+            "appearanceComics": "Final Crisis: Rage of The Red Lanterns #1",
+            "appearanceYear": 2008,
+            "width": "230px",
+            "copycat": "Rocket Racoon",
+            "imgSource": "images/dc-images/characters/dex-starr.png"
+        },
+        {
+            "name": "Doctor Fate",
+            "appearanceComics": "More Fun Comics #55",
+            "appearanceYear": 1940,
+            "width": "280px",
+            "copycat": "Doctor Strange",
+            "movies": [
+                "Black Adam (2022)"
+            ],
+            "imgSource": "images/dc-images/characters/doctor-fate.png"
+        },
+        {
+            "name": "Doctor Polaris",
+            "appearanceComics": "Green Lantern #21",
+            "appearanceYear": 1963,
+            "width": "250px",
+            "copycat": "Magneto",
+            "imgSource": "images/dc-images/characters/doctor-polaris.png"
+        },
+        {
+            "name": "Doom Patrol",
+            "appearanceComics": "My Greatest Adventure #80",
+            "appearanceYear": 1963,
+            "width": "270px",
+            "copycat": "X-Men",
+            "imgSource": "images/dc-images/characters/doom-patrol.png"
+        },
+        {
+            "name": "Doomsday",
+            "appearanceComics": "Superman: The Man of Steel #17",
+            "appearanceYear": 1992,
+            "width": "250px",
+            "copycat": "Abomination",
+            "movies": [
+                "Batman v Superman: Dawn of Justice (2016)"
+            ],
+            "imgSource": "images/dc-images/characters/doomsday.png"
+        },
+        {
+            "name": "Dreamslayer",
+            "appearanceComics": "Justice League Europe #15",
+            "appearanceYear": 1990,
+            "width": "350px",
+            "copycat": "Dormammmu",
+            "imgSource": "images/dc-images/characters/dreamslayer.png"
+        },
+        {
+            "name": "Firestorm",
+            "appearanceComics": "Firestorm, the Nuclear Man #1",
+            "appearanceYear": 1978,
+            "width": "250px",
+            "copycat": "Human Torch",
+            "imgSource": "images/dc-images/characters/firestorm.png"
+        },
+        {
+            "name": "Flash",
+            "appearanceComics": "Flash Comics #1",
+            "appearanceYear": 1940,
+            "width": "180px",
+            "copycat": "Quicksilver",
+            "movies": [
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Suicide Squad (2016)",
+                "Justice League (2017)",
+                "Zack Snyder's Justice League (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/flash.png"
+        },
+        {
+            "name": "Gizmo",
+            "appearanceComics": "The New Teen Titans #3",
+            "appearanceYear": 1981,
+            "width": "150px",
+            "copycat": "Doctor Octopus",
+            "imgSource": "images/dc-images/characters/gizmo.png"
+        },
+        {
+            "name": "Godspeed",
+            "appearanceComics": "The Flash: Rebirth #1",
+            "appearanceYear": 2016,
+            "width": "290px",
+            "copycat": "Runner",
+            "imgSource": "images/dc-images/characters/godspeed.png"
+        },
+        {
+            "name": "Gorilla Grodd",
+            "appearanceComics": "The Flash #106",
+            "appearanceYear": 1959,
+            "width": "220px",
+            "imgSource": "images/dc-images/characters/gorilla-grodd.png"
+        },
+        {
+            "name": "Green Arrow",
+            "appearanceComics": "More Fun Comics #73",
+            "appearanceYear": 1941,
+            "width": "350px",
+            "copycat": "Hawkeye",
+            "imgSource": "images/dc-images/characters/green-arrow.png"
+        },
+        {
+            "name": "Green Lantern",
+            "appearanceComics": "All-American Comics #16",
+            "appearanceYear": 1940,
+            "width": "350px",
+            "copycat": "Nova",
+            "movies": [
+                "Green Lantern (2011)",
+                "Justice League (2017)"
+            ],
+            "imgSource": "images/dc-images/characters/green-lantern.png"
+        },
+        {
+            "name": "Harley Quinn",
+            "appearanceComics": "The Batman Adventures #12",
+            "appearanceYear": 1993,
+            "width": "300px",
+            "movies": [
+                "Suicide Squad (2016)",
+                "Birds of Prey (2020)",
+                "The Suicide Squad (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/harley-quinn.png"
+        },
+        {
+            "name": "Hawkman",
+            "appearanceComics": "Flash Comics #1",
+            "appearanceYear": 1940,
+            "width": "270px",
+            "copycat": "Falcon",
+            "movies": [
+                "Black Adam (2022)"
+            ],
+            "imgSource": "images/dc-images/characters/hawkman.png"
+        },
+        {
+            "name": "Icicle",
+            "appearanceComics": "All-American Comics #90",
+            "appearanceYear": 1947,
+            "width": "270px",
+            "copycat": "Iceman",
+            "imgSource": "images/dc-images/characters/icicle.png"
+        },
+        {
+            "name": "Imperiex",
+            "appearanceComics": "Superman #153",
+            "appearanceYear": 2000,
+            "width": "250px",
+            "copycat": "Galactus",
+            "imgSource": "images/dc-images/characters/imperiex.png"
+        },
+        {
+            "name": "Jinx",
+            "appearanceComics": "Tales of the Teen Titans #56",
+            "appearanceYear": 1985,
+            "width": "250px",
+            "imgSource": "images/dc-images/characters/jinx.png"
+        },
+        {
+            "name": "John Constantine",
+            "appearanceComics": "The Saga of Swamp Thing #37",
+            "appearanceYear": 1985,
+            "width": "250px",
+            "copycat": "Peter Wisdom",
+            "movies": [
+                "Constantine (2005)"
+            ],
+            "imgSource": "images/dc-images/characters/john-constantine.png"
+        },
+        {
+            "name": "Justice League",
+            "appearanceComics": "The Brave and the Bold #28",
+            "appearanceYear": 1960,
+            "width": "300px",
+            "copycat": "Avengers",
+            "movies": [
+                "Justice League (2017)",
+                "Zack Snyder's Justice League (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/justice-league.png"
+        },
+        {
+            "name": "Kid Devil",
+            "appearanceComics": "Fury of Firestorm #24",
+            "appearanceYear": 1984,
+            "width": "250px",
+            "copycat": "Night Crawler",
+            "imgSource": "images/dc-images/characters/kid-devil.png"
+        },
+        {
+            "name": "Killer Croc",
+            "appearanceComics": "Detective Comics #523",
+            "appearanceYear": 1983,
+            "width": "210px",
+            "copycat": "Lizard",
+            "movies": [
+                "Suicide Squad (2016)"
+            ],
+            "imgSource": "images/dc-images/characters/killer-croc.png"
+        },
+        {
+            "name": "King Shark",
+            "appearanceComics": "Superboy #0",
+            "appearanceYear": 1994,
+            "width": "275px",
+            "copycat": "Tiger Shark",
+            "movies": [
+                "The Suicide Squad (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/king-shark.png"
+        },
+        {
+            "name": "Kismet",
+            "appearanceComics": "Adventures of Superman #494",
+            "appearanceYear": 1992,
+            "width": "275px",
+            "copycat": "Eternity",
+            "imgSource": "images/dc-images/characters/kismet.png"
+        },
+        {
+            "name": "Kobra",
+            "appearanceComics": "Kobra #1",
+            "appearanceYear": 1976,
+            "width": "180px",
+            "copycat": "Hydra",
+            "imgSource": "images/dc-images/characters/kobra.png"
+        },
+        {
+            "name": "Lex Luthor",
+            "appearanceComics": "Action Comics #23",
+            "appearanceYear": 1940,
+            "width": "230px",
+            "movies": [
+                "Man of Steel (2013)",
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Justice League (2017)"
+            ],
+            "imgSource": "images/dc-images/characters/lex-luthor.png"
+        },
+        {
+            "name": "Lord Havok",
+            "appearanceComics": "Justice League Europe #15",
+            "appearanceYear": 1990,
+            "width": "170px",
+            "copycat": "Doctor Doom",
+            "imgSource": "images/dc-images/characters/lord-havok.png"
+        },
+        {
+            "name": "Mammoth",
+            "appearanceComics": "The New Teen Titans #3",
+            "appearanceYear": 1981,
+            "width": "270px",
+            "imgSource": "images/dc-images/characters/mammoth.png"
+        },
+        {
+            "name": "Martian Manhunter",
+            "appearanceComics": "Detective Comics #225",
+            "appearanceYear": 1955,
+            "width": "270px",
+            "copycat": "Vision",
+            "movies": [
+                "Zack Snyder's Justice League (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/martian-manhunter.png"
+        },
+        {
+            "name": "Mr Mxyzptlk",
+            "appearanceComics": "Superman #30",
+            "appearanceYear": 1944,
+            "width": "230px",
+            "copycat": "Impossible Man",
+            "imgSource": "images/dc-images/characters/mr-mxyzptlk.png"
+        },
+        {
+            "name": "Mogo",
+            "appearanceComics": "Green Lantern (vol. 2) #188",
+            "appearanceYear": 1985,
+            "width": "230px",
+            "copycat": "Ego",
+            "imgSource": "images/dc-images/characters/mogo.png"
+        },
+        {
+            "name": "Plastic Man",
+            "appearanceComics": "Police Comics #1",
+            "appearanceYear": 1941,
+            "width": "160px",
+            "copycat": "Mr Fantastic",
+            "imgSource": "images/dc-images/characters/plastic-man.png"
+        },
+        {
+            "name": "Power Girl",
+            "appearanceComics": "All Star Comics #58",
+            "appearanceYear": 1976,
+            "width": "230px",
+            "copycat": "Captain Marvel",
+            "imgSource": "images/dc-images/characters/power-girl.png"
+        },
+        {
+            "name": "Raven",
+            "appearanceComics": "DC Comics Presents #26",
+            "appearanceYear": 1980,
+            "width": "330px",
+            "imgSource": "images/dc-images/characters/raven.png"
+        },
+        {
+            "name": "Red Hood",
+            "appearanceComics": "Batman #635",
+            "appearanceYear": 2005,
+            "width": "240px",
+            "copycat": "Winter Soldier",
+            "imgSource": "images/dc-images/characters/red-hood.png"
+        },
+        {
+            "name": "Red Tornado",
+            "appearanceComics": "Justice League of America #64",
+            "appearanceYear": 1968,
+            "width": "240px",
+            "imgSource": "images/dc-images/characters/red-tornado.png"
+        },
+        {
+            "name": "Red X",
+            "appearanceComics": "Future State: Teen Titans #1",
+            "appearanceYear": "Unknown",
+            "width": "130px",
+            "imgSource": "images/dc-images/characters/red-x.png"
+        },
+        {
+            "name": "Robin",
+            "appearanceComics": "Detective Comics #38",
+            "appearanceYear": 1940,
+            "width": "260px",
+            "imgSource": "images/dc-images/characters/robin.png"
+        },
+        {
+            "name": "Scandal Savage",
+            "appearanceComics": "Villains United #1",
+            "appearanceYear": 2005,
+            "width": "250px",
+            "copycat": "X-23",
+            "imgSource": "images/dc-images/characters/scandal-savage.png"
+        },
+        {
+            "name": "Scarcecrow",
+            "appearanceComics": "World's Finest Comics #3",
+            "appearanceYear": 1941,
+            "width": "320px",
+            "copycat": "Scarcecrow",
+            "movies": [
+                "Batman Begins (2005)",
+                "The Dark Knight (2008)",
+                "The Dark Knight Rises (2012)"
+            ],
+            "imgSource": "images/dc-images/characters/scarcecrow.png"
+        },
+        {
+            "name": "Shazam",
+            "appearanceComics": "Whiz Comics #2",
+            "appearanceYear": 1940,
+            "width": "330px",
+            "copycat": "Sentry",
+            "movies": [
+                "Shazam! (2019)",
+                "Shazam! Fury of the Gods (2022)"
+            ],
+            "imgSource": "images/dc-images/characters/shazam.png"
+        },
+        {
+            "name": "Silver Banshee",
+            "appearanceComics": "Action Comics #595",
+            "appearanceYear": 1987,
+            "width": "300px",
+            "copycat": "Banshee",
+            "imgSource": "images/dc-images/characters/silver-banshee.png"
+        },
+        {
+            "name": "Sinestro",
+            "appearanceComics": "Green Lantern (vol. 2) #7",
+            "appearanceYear": 1961,
+            "width": "300px",
+            "movies": [
+                "Green Lantern (2011)"
+            ],
+            "imgSource": "images/dc-images/characters/sinestro.png"
+        },
+        {
+            "name": "Solomon Grundy",
+            "appearanceComics": "All-American Comics #61",
+            "appearanceYear": 1944,
+            "width": "250px",
+            "copycat": "Hulk",
+            "imgSource": "images/dc-images/characters/solmon-grundy.png"
+        },
+        {
+            "name": "Starfire",
+            "appearanceComics": "DC Comics Presents #26",
+            "appearanceYear": 1980,
+            "width": "220px",
+            "copycat": "Firestar",
+            "imgSource": "images/dc-images/characters/starfire.png"
+        },
+        {
+            "name": "Stargirl",
+            "appearanceComics": "JSA: All Stars #4",
+            "appearanceYear": 2003,
+            "width": "270px",
+            "copycat": "Aurora",
+            "imgSource": "images/dc-images/characters/stargirl.png"
+        },
+        {
+            "name": "Star Sapphire",
+            "appearanceComics": "All-Flash Comics #32",
+            "appearanceYear": 1948,
+            "width": "270px",
+            "copycat": "Moonstone",
+            "imgSource": "images/dc-images/characters/star-sapphire.png"
+        },
+        {
+            "name": "Supergirl",
+            "appearanceComics": "Action Comics #252",
+            "appearanceYear": 1959,
+            "width": "270px",
+            "movie": [
+                "The Flash (2023)"
+            ],
+            "imgSource": "images/dc-images/characters/supergirl.png"
+        },
+        {
+            "name": "Superman",
+            "appearanceComics": "Action Comics #1",
+            "appearanceYear": 1938,
+            "width": "300px",
+            "copycat": "Hyperion",
+            "movie": [
+                "Mam of Steel (2013)",
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Justice League (2017)",
+                "Shazam! (2019)",
+                "Zack Snyder's Justice League (2021)'"
+            ],
+            "imgSource": "images/dc-images/characters/superman.png"
+        },
+        {
+            "name": "Swamp Thing",
+            "appearanceComics": "Swamp Thing #1",
+            "appearanceYear": 1972,
+            "width": "320px",
+            "copycat": "Man-Thing",
+            "imgSource": "images/dc-images/characters/swamp-thing.png"
+        },
+        {
+            "name": "Talia Al Ghul",
+            "appearanceComics": "Detective Comics #411",
+            "appearanceYear": 1971,
+            "width": "210px",
+            "movies": [
+                "Batman Begins (2005)",
+                "The Dark Knight (2008)",
+                "The Dark Knight Rises (2012)"
+            ],
+            "imgSource": "images/dc-images/characters/talia-al-ghul.png"
+        },
+        {
+            "name": "Timber Wolf",
+            "appearanceComics": "Adventure Comics #327",
+            "appearanceYear": 1964,
+            "width": "290px",
+            "imgSource": "images/dc-images/characters/timber-wolf.png"
+        },
+        {
+            "name": "Trigon",
+            "appearanceComics": "New Teen Titans #2",
+            "appearanceYear": 1980,
+            "width": "230px",
+            "copycat": "Surtur",
+            "imgSource": "images/dc-images/characters/trigon.png"
+        },
+        {
+            "name": "Wonder Woman",
+            "appearanceComics": "All Star Comics #8",
+            "appearanceYear": 1941,
+            "width": "210px",
+            "copycat": "Sif",
+            "movies": [
+                "Batman v Superman: Dawn of Justice (2016)",
+                "Justice League (2017)",
+                "Wonder Woman (2017)",
+                "Wonder Woman 1984 (2020)",
+                "Zack Snyder's Justice League (2021)"
+            ],
+            "imgSource": "images/dc-images/characters/wonder-woman.png"
+        },
+        {
+            "name": "Zatanna",
+            "appearanceComics": "Hawkman #4",
+            "appearanceYear": 1964,
+            "width": "160px",
+            "copycat": "Scarlet Witch",
+            "movies": [
+                "Zatanna (2022)"
+            ],
+            "imgSource": "images/dc-images/characters/zatanna.png"
+        }
+    ]
+}
