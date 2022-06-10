@@ -427,7 +427,7 @@ searchBar.addEventListener('keyup', () => {
 
 
 // Mobile Keyup Event Listener
-$('.search-bar input').on('keyup input', () => {
+$('.search-bar input').on('keyup touchend', () => {
     marvelMovies.innerHTML = ``;
     dcMovies.innerHTML = ``;
 
