@@ -274,7 +274,7 @@ searchBar.addEventListener('click', () => {
     }
 });
 
-searchBar.addEventListener('keyup', () => {
+$('.search-bar input').keyup(() => {
     marvelMovies.innerHTML = ``;
     dcMovies.innerHTML = ``;
 
@@ -422,7 +422,6 @@ searchBar.addEventListener('keyup', () => {
     }
 
     notFound();
-
 });
 
 
