@@ -8,8 +8,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     document.querySelector('.logo-imgs').style.display = "none";
 
     document.querySelector('.not-found').innerHTML = `
-        <h1>We figured out that your are using a Mobile device to access our website.
-        Plese chage to a Deasktop device</h1>  <br>
+        <h1 atyle="color: #585858">We figured out that your are using a Mobile device to access our website.
+        Plese change to a Deasktop device</h1>  <br>
         <h1>
             📱 
             <i class="fa-solid fa-arrow-right-long"></i> 
