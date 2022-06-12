@@ -258,7 +258,7 @@ searchBar.addEventListener('click', () => {
     }
 });
 
-searchBar.onchange= () => {
+searchBar.addEventListener("change", () => {
     marvelMovies.innerHTML = ``;
     dcMovies.innerHTML = ``;
 
@@ -391,7 +391,7 @@ searchBar.onchange= () => {
     }
 
     notFound();
-}
+});
 
 /*
 searchBar.addEventListener('change', () => {
