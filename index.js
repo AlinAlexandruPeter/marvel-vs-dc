@@ -47,6 +47,8 @@ const enableDarkMode = () => {
     document.querySelector('footer').style.backgroundColor = '#000';
     document.querySelector('footer #all-rights').style.color = '#fff';
     document.querySelector('section:last-of-type').style.color = '#6b6b6b';
+
+    // document.querySelector('.not-found h1').style.color = "#fff";
     
     localStorage.setItem('darkMode', "on");
 };
@@ -93,7 +95,7 @@ let styleNotFound = () => {
     let notFound = document.querySelector('.not-found');
     notFound.style.transform = 'translateY(-380px)';
     notFound.innerHTML = `
-    <h1>Hmm... It seems like comics didn't reveal this character...</h1><br>
+        <h1>Hmm... It seems like comics didn't reveal this character...</h1><br>
         <h1 id="emoji">🤔</h1>
     `;
     
@@ -103,6 +105,7 @@ let styleNotFound = () => {
     notFound.querySelector('h1').style.fontFamily = 'Calibri, sans-serif';
     notFound.querySelector('h1').style.marginBottom = '-40px';
     notFound.querySelector('#emoji').style.fontSize = '100px';
+    document.querySelector('.not-found h1').style.color = "#585858";
     
 }
 
@@ -258,7 +261,7 @@ searchBar.addEventListener('click', () => {
     }
 });
 
-searchBar.addEventListener("input", () => {
+searchBar.addEventListener('input', () => {
     marvelMovies.innerHTML = ``;
     dcMovies.innerHTML = ``;
 
@@ -389,8 +392,6 @@ searchBar.addEventListener("input", () => {
         }
         
     }
-    
-    console.log('nope');
 
     notFound();
 });
