@@ -3,6 +3,9 @@ $('.flip').on('click', () => {
 });
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    
+    document.querySelector('.result-container').style.display = "none";
+    document.querySelector('.logo-imgs').style.display = "none";
 
     document.querySelector('.not-found').innerHTML = `
         <h1>We figured out that your are using a Mobile device to access our website.
