@@ -389,6 +389,8 @@ searchBar.addEventListener("input", () => {
         }
         
     }
+    
+    console.log('nope');
 
     notFound();
 });
