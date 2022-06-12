@@ -2,6 +2,20 @@ $('.flip').on('click', () => {
     $('.card').toggleClass('flipping');
 });
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+    document.querySelector('.not-found').innerHTML = `
+        <h1>We figured out that your are using a Mobile device to access our website.
+        Plese chage to a Deasktop device</h1>  <br>
+        <h1>
+            📱 
+            <i class="fa-solid fa-arrow-right-long"></i> 
+            🖥️
+        </h1>
+    `;
+    document.querySelector('.search-bar input').disabled = true;
+}
+
 async function getData() {
     const response = await fetch('characters.json');
     const characters = await response.json();
