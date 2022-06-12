@@ -147,16 +147,21 @@ let resetCards = () => {
     dcNameBack.innerHTML = "Cyborg <hr>";
 }
 
-let hasNotCopycat = card => {
+let hasNoCopycat = card => {
     let img;
     if (card === 'marvel')
         img = marvelImg;
     else
         img = dcImg;
-
+        
+    img.style.visibility = "hidden";
     img.src = 'images/question-mark.png';
-    document.querySelector(`#${card}-card .front h1`).textContent = "Unknown";
     document.querySelector(`#${card}-card .front img`).style.width = "280px";
+    setTimeout(() => {
+        img.style.visibility = "visible";
+        document.querySelector(`#${card}-card .front h1`).textContent = "Unknown";
+    }, 90)
+
     document.querySelector(`#${card}-card .back`).style.color = "transparent";
     document.querySelector(`#${card}-card .back hr`).style.borderColor = "transparent";
 }
@@ -178,37 +183,16 @@ let findCopycat = (where, copycat) => {
     return false;
 }
 
-let changeMarvelCard = (name, character) => {
-    marvelImg.src = character.imgSource;
-    marvelImg.style.width = `${character.width}`;
+let changeCard = (name, character, toChange, img, front, back, movies) => {
+    img.style.visibility = "hidden";
+    img.src = character.imgSource;
+    img.style.width = `${character.width}`;
+    setTimeout(() => {
+        img.style.visibility = "visible";
+        document.querySelector(`#${toChange}-comic-year`).textContent = `${character.appearanceComics} (${character.appearanceYear})`
+    }, 100);
 
-    document.querySelector(`#marvel-comic-year`).textContent = `${character.appearanceComics} (${character.appearanceYear})`
 
-    const insertMovies = which => {
-        if (character.movies !== undefined)
-            for (let i = 0; i < character.movies.length; i++) {
-                let elem = document.createElement('p');
-                let text = document.createTextNode(`${character.movies[i]}`);
-                elem.appendChild(text);
-                which.appendChild(elem);
-            }
-        else {
-            marvelMovies.innerHTML = 'This chracter didn\'t show up in any movie until now';
-        }
-    }
-
-    insertMovies(marvelMovies);
-
-    marvelNameFront.textContent = `${name}`;
-    marvelNameBack.innerHTML = `${name} <hr>`;
-}
-
-let changeDcCard = (name, character) => {
-
-    dcImg.src = character.imgSource;
-    dcImg.style.width = `${character.width}`;
-
-    document.querySelector(`#dc-comic-year`).textContent = `${character.appearanceComics} (${character.appearanceYear})`
 
     const insertMovies = which => {
         if (character.movies !== undefined)
@@ -219,14 +203,14 @@ let changeDcCard = (name, character) => {
                 which.appendChild(elem);
             }
         else {
-            dcMovies.innerHTML = 'This chracter didn\'t show up in any movie until now';
+            movies.innerHTML = 'This chracter didn\'t show up in any movie until now';
         }
     }
 
-    insertMovies(dcMovies);
+    insertMovies(movies);
 
-    dcNameFront.textContent = `${name}`;
-    dcNameBack.innerHTML = `${name} <hr>`;
+    front.textContent = `${name}`;
+    back.innerHTML = `${name} <hr>`;
 
 }
 
@@ -253,8 +237,8 @@ document.querySelector('.go-up button').onclick = () => {
 
 
 searchBar.addEventListener('click', () => {
+    
     if(searchBar === document.activeElement && searchBar.value.length === 0) {
-        console.log(searchBar.value)
         document.getElementById('search-bar').scrollIntoView({
             behavior: "smooth",
             block:  "start",
@@ -274,7 +258,281 @@ searchBar.addEventListener('click', () => {
     }
 });
 
-$('.search-bar input').keyup(() => {
+searchBar.onchange= () => {
+    marvelMovies.innerHTML = ``;
+    dcMovies.innerHTML = ``;
+
+    document.querySelector('#marvel-comic-year').textContent = `Tales of Suspense #39 (1963)`;
+    document.querySelector('#dc-comic-year').textContent = `DC Comics Presents #26 (1980)`;
+
+    document.querySelector(`#marvel-card .back`).style.color = "#000";
+    document.querySelector(`#marvel-card .back hr`).style.borderColor = "#000";
+
+    document.querySelector(`#dc-card .back`).style.color = "#000";
+    document.querySelector(`#dc-card .back hr`).style.borderColor = "#000";
+
+
+    document.querySelector('#marvel-card .movies h2').style.display = 'block';
+
+    if (document.querySelector('.not-found').style.display == 'none')
+        document.querySelector('.not-found').style.transform = 'translateY(0)';
+
+    document.querySelector('.not-found').style.display = 'none';
+    document.querySelector('.result-container').style.transform = 'translateX(0px)';
+    document.querySelector('.logo-imgs').style.transform = 'translateX(0px)';
+
+    let searchValue = searchBar.value;
+    let found = false;
+    
+    if (searchValue === "") {
+
+        resetCards();
+        
+        return;
+        
+    } else {
+        
+        // Searching through the Marvel characters
+        for (let i = 0; i < marvelCharacters.length; i++) {
+            let character = marvelCharacters[i];
+            
+            if (character.name.toLowerCase().startsWith(searchValue)) {
+
+                changeCard(character.name, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                
+                let copycatFound = findCopycat("marvel", character.copycat);
+                if (copycatFound)
+                    changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+                else
+                    hasNoCopycat("dc")
+                    
+                found = true;
+                return;
+                
+            } else if (character.alias !== undefined &&
+                character.alias.toLowerCase().startsWith(searchValue)) {
+                    
+                changeCard(character.alias, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                
+                let copycatFound = findCopycat("marvel", character.copycat);
+                if (copycatFound)
+                    changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+                
+                found = true;
+                return;
+
+            } else if (character.name.toLowerCase().includes('-')) {    // ---(1)
+                
+                let splittenName = character.name.toLowerCase().split('-');
+                let tempName = `${splittenName[0]} ${splittenName[1]}`;
+                
+                if (tempName.toLowerCase().startsWith(searchValue)) {
+                    
+                    changeCard(character.name, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                    
+                    let copycatFound = findCopycat("marvel", character.copycat);
+                    if (copycatFound)
+                        changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+                    else
+                        hasNoCopycat("dc")
+                    
+                    
+                    found = true;
+                    return;
+                    
+                }
+                
+            }
+        }
+
+
+        // Searching through the DC characters
+        if (!found) {
+            for (let i = 0; i < dcCharacters.length; i++) {
+                let character = dcCharacters[i];
+                
+                if (character.name.toLowerCase().startsWith(searchValue)) {
+    
+                    changeCard(character.name, character, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+
+                    let copycatFound = findCopycat("dc", character.copycat);
+                    if (copycatFound)
+                        changeCard(copycatFound.name, copycatFound, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                    else
+                        hasNoCopycat("marvel")
+                    
+                    found = true;
+                    return;
+                    
+                }  else if (character.name.toLowerCase().includes('-')) {    // ---(1)
+
+                    let splittenName = character.name.toLowerCase().split('-');
+                    let tempName = `${splittenName[0]} ${splittenName[1]}`;
+                    
+                    if (tempName.toLowerCase().startsWith(searchValue)) {
+                        
+                        changeCard(character.name, character, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+                        
+                        let copycatFound = findCopycat("dc", character.copycat);
+                        if (copycatFound)
+                            changeCard(copycatFound.name, copycatFound, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                        else
+                            hasNoCopycat("marvel")        
+
+                        found = true;
+                        return;
+                        
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+
+    notFound();
+}
+
+/*
+searchBar.addEventListener('change', () => {
+
+    marvelMovies.innerHTML = ``;
+    dcMovies.innerHTML = ``;
+
+    document.querySelector('#marvel-comic-year').textContent = `Tales of Suspense #39 (1963)`;
+    document.querySelector('#dc-comic-year').textContent = `DC Comics Presents #26 (1980)`;
+
+    document.querySelector(`#marvel-card .back`).style.color = "#000";
+    document.querySelector(`#marvel-card .back hr`).style.borderColor = "#000";
+
+    document.querySelector(`#dc-card .back`).style.color = "#000";
+    document.querySelector(`#dc-card .back hr`).style.borderColor = "#000";
+
+
+    document.querySelector('#marvel-card .movies h2').style.display = 'block';
+
+    if (document.querySelector('.not-found').style.display == 'none')
+        document.querySelector('.not-found').style.transform = 'translateY(0)';
+
+    document.querySelector('.not-found').style.display = 'none';
+    document.querySelector('.result-container').style.transform = 'translateX(0px)';
+    document.querySelector('.logo-imgs').style.transform = 'translateX(0px)';
+
+    let searchValue = searchBar.value;
+    let found = false;
+    
+    if (searchValue === "") {
+
+        resetCards();
+        
+        return;
+        
+    } else {
+        
+        // Searching through the Marvel characters
+        for (let i = 0; i < marvelCharacters.length; i++) {
+            let character = marvelCharacters[i];
+            
+            if (character.name.toLowerCase().startsWith(searchValue)) {
+
+                changeCard(character.name, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                
+                let copycatFound = findCopycat("marvel", character.copycat);
+                if (copycatFound)
+                    changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+                else
+                    hasNoCopycat("dc")
+                    
+                found = true;
+                return;
+                
+            } else if (character.alias !== undefined &&
+                character.alias.toLowerCase().startsWith(searchValue)) {
+                    
+                changeCard(character.alias, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                
+                let copycatFound = findCopycat("marvel", character.copycat);
+                if (copycatFound)
+                    changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+                
+                found = true;
+                return;
+
+            } else if (character.name.toLowerCase().includes('-')) {    // ---(1)
+                
+                let splittenName = character.name.toLowerCase().split('-');
+                let tempName = `${splittenName[0]} ${splittenName[1]}`;
+                
+                if (tempName.toLowerCase().startsWith(searchValue)) {
+                    
+                    changeCard(character.name, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                    
+                    let copycatFound = findCopycat("marvel", character.copycat);
+                    if (copycatFound)
+                        changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+                    else
+                        hasNoCopycat("dc")
+                    
+                    
+                    found = true;
+                    return;
+                    
+                }
+                
+            }
+        }
+
+
+        // Searching through the DC characters
+        if (!found) {
+            for (let i = 0; i < dcCharacters.length; i++) {
+                let character = dcCharacters[i];
+                
+                if (character.name.toLowerCase().startsWith(searchValue)) {
+    
+                    changeCard(character.name, character, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+
+                    let copycatFound = findCopycat("dc", character.copycat);
+                    if (copycatFound)
+                        changeCard(copycatFound.name, copycatFound, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                    else
+                        hasNoCopycat("marvel")
+                    
+                    found = true;
+                    return;
+                    
+                }  else if (character.name.toLowerCase().includes('-')) {    // ---(1)
+
+                    let splittenName = character.name.toLowerCase().split('-');
+                    let tempName = `${splittenName[0]} ${splittenName[1]}`;
+                    
+                    if (tempName.toLowerCase().startsWith(searchValue)) {
+                        
+                        changeCard(character.name, character, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
+                        
+                        let copycatFound = findCopycat("dc", character.copycat);
+                        if (copycatFound)
+                            changeCard(copycatFound.name, copycatFound, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
+                        else
+                            hasNoCopycat("marvel")        
+
+                        found = true;
+                        return;
+                        
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+
+    notFound();
+});
+*/
+
+/*
+searchBar.addEventListener('keyup', () => {
     marvelMovies.innerHTML = ``;
     dcMovies.innerHTML = ``;
 
@@ -320,7 +578,7 @@ $('.search-bar input').keyup(() => {
                 if (copycatFound)
                     changeDcCard(copycatFound.name, copycatFound)
                 else
-                    hasNotCopycat("dc")
+                    hasNoCopycat("dc")
                     
                 found = true;
                 return;
@@ -350,7 +608,7 @@ $('.search-bar input').keyup(() => {
                     if (copycatFound)
                         changeDcCard(copycatFound.name, copycatFound)
                     else
-                        hasNotCopycat("dc")
+                        hasNoCopycat("dc")
                     
                     
                     found = true;
@@ -375,7 +633,7 @@ $('.search-bar input').keyup(() => {
                     if (copycatFound)
                         changeMarvelCard(copycatFound.name, copycatFound)
                     else
-                        hasNotCopycat("marvel")
+                        hasNoCopycat("marvel")
                     
                     found = true;
                     return;
@@ -390,7 +648,7 @@ $('.search-bar input').keyup(() => {
                     if (copycatFound)
                         changeMarvelCard(copycatFound.name, copycatFound)
                     else
-                        hasNotCopycat("marvel")    
+                        hasNoCopycat("marvel")    
                         
                     found = true;
                     return;
@@ -408,7 +666,7 @@ $('.search-bar input').keyup(() => {
                         if (copycatFound)
                             changeMarvelCard(copycatFound.name, copycatFound)
                         else
-                            hasNotCopycat("marvel")        
+                            hasNoCopycat("marvel")        
 
                         found = true;
                         return;
@@ -422,159 +680,10 @@ $('.search-bar input').keyup(() => {
     }
 
     notFound();
+
 });
+*/
 
-
-// Mobile Keyup Event Listener
-$('.search-bar input').on('keyup touchend', () => {
-    marvelMovies.innerHTML = ``;
-    dcMovies.innerHTML = ``;
-
-    document.querySelector('#marvel-comic-year').textContent = `Tales of Suspense #39 (1963)`;
-    document.querySelector('#dc-comic-year').textContent = `DC Comics Presents #26 (1980)`;
-
-    document.querySelector(`#marvel-card .back`).style.color = "#000";
-    document.querySelector(`#marvel-card .back hr`).style.borderColor = "#000";
-
-    document.querySelector(`#dc-card .back`).style.color = "#000";
-    document.querySelector(`#dc-card .back hr`).style.borderColor = "#000";
-
-
-    document.querySelector('#marvel-card .movies h2').style.display = 'block';
-
-    if (document.querySelector('.not-found').style.display == 'none')
-        document.querySelector('.not-found').style.transform = 'translateY(0)';
-
-    document.querySelector('.not-found').style.display = 'none';
-    document.querySelector('.result-container').style.transform = 'translateX(0px)';
-    document.querySelector('.logo-imgs').style.transform = 'translateX(0px)';
-
-    let searchValue = searchBar.value;
-    let found = false;
-    
-    if (searchValue === "") {
-
-        resetCards();
-        
-        return;
-        
-    } else {
-        
-        // Searching through the Marvel characters
-        for (let i = 0; i < marvelCharacters.length; i++) {
-            let character = marvelCharacters[i];
-            
-            if (character.name.toLowerCase().startsWith(searchValue)) {
-
-                changeMarvelCard(character.name, character);
-                
-                let copycatFound = findCopycat("marvel", character.copycat);
-                if (copycatFound)
-                    changeDcCard(copycatFound.name, copycatFound)
-                else
-                    hasNotCopycat("dc")
-                    
-                found = true;
-                return;
-                
-            } else if (character.alias !== undefined &&
-                character.alias.toLowerCase().startsWith(searchValue)) {
-                    
-                changeMarvelCard(character.alias, character);
-                
-                let copycatFound = findCopycat("marvel", character.copycat);
-                if (copycatFound)
-                    changeDcCard(copycatFound.name, copycatFound)
-                
-                found = true;
-                return;
-
-            } else if (character.name.toLowerCase().includes('-')) {    // ---(1)
-                
-                let splittenName = character.name.toLowerCase().split('-');
-                let tempName = `${splittenName[0]} ${splittenName[1]}`;
-                
-                if (tempName.toLowerCase().startsWith(searchValue)) {
-                    
-                    changeMarvelCard(character.name, character);
-                    
-                    let copycatFound = findCopycat("marvel", character.copycat);
-                    if (copycatFound)
-                        changeDcCard(copycatFound.name, copycatFound)
-                    else
-                        hasNotCopycat("dc")
-                    
-                    
-                    found = true;
-                    return;
-                    
-                }
-                
-            }
-        }
-
-
-        // Searching through the DC characters
-        if (!found) {
-            for (let i = 0; i < dcCharacters.length; i++) {
-                let character = dcCharacters[i];
-                
-                if (character.name.toLowerCase().startsWith(searchValue)) {
-    
-                    changeDcCard(character.name, character);
-
-                    let copycatFound = findCopycat("dc", character.copycat);
-                    if (copycatFound)
-                        changeMarvelCard(copycatFound.name, copycatFound)
-                    else
-                        hasNotCopycat("marvel")
-                    
-                    found = true;
-                    return;
-                    
-                } else if (character.alias !== undefined &&
-                    character.alias.toLowerCase().startsWith(searchValue)) {
-                        
-                    changeMarvelCard(character.alias, character);
-                    
-
-                    let copycatFound = findCopycat("dc", character.copycat);
-                    if (copycatFound)
-                        changeMarvelCard(copycatFound.name, copycatFound)
-                    else
-                        hasNotCopycat("marvel")    
-                        
-                    found = true;
-                    return;
-    
-                } else if (character.name.toLowerCase().includes('-')) {    // ---(1)
-                    
-                    let splittenName = character.name.toLowerCase().split('-');
-                    let tempName = `${splittenName[0]} ${splittenName[1]}`;
-                    
-                    if (tempName.toLowerCase().startsWith(searchValue)) {
-                        
-                        changeMarvelCard(character.name, character);
-                        
-                        let copycatFound = findCopycat("dc", character.copycat);
-                        if (copycatFound)
-                            changeMarvelCard(copycatFound.name, copycatFound)
-                        else
-                            hasNotCopycat("marvel")        
-
-                        found = true;
-                        return;
-                        
-                    }
-                    
-                }
-            }
-        }
-        
-    }
-
-    notFound();
-});
 
 
 // Flip Button
