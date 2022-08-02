@@ -3,13 +3,13 @@ $('.flip').on('click', () => {
 });
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    
+
     document.querySelector('.result-container').style.display = "none";
     document.querySelector('.logo-imgs').style.display = "none";
 
     document.querySelector('.not-found').innerHTML = `
-        <h1 style="color: #585858">We figured out that your are using a Mobile device to access our website.
-        Plese change to a Deasktop device</h1>  <br>
+        <h1>We figured out that your are using a Mobile device to access our website.
+        Plese chage to a Deasktop device</h1>  <br>
         <h1>
             📱 
             <i class="fa-solid fa-arrow-right-long"></i> 
@@ -116,14 +116,6 @@ let styleNotFound = () => {
         <h1 id="emoji">🤔</h1>
     `;
     
-    notFound.style.flexDirection = 'column';
-    
-    notFound.querySelector('h1').style.fontSize = '40px';
-    notFound.querySelector('h1').style.fontFamily = 'Calibri, sans-serif';
-    notFound.querySelector('h1').style.marginBottom = '-40px';
-    notFound.querySelector('#emoji').style.fontSize = '100px';
-    document.querySelector('.not-found h1').style.color = "#585858";
-    
 }
 
 let notFound = () => {
@@ -134,6 +126,7 @@ let notFound = () => {
     document.querySelector('.not-found').style.display = 'flex'; 
 
 }
+
 
 let resetCards = () => {
     marvelImg.src = "images/marvel-images/characters/iron-man.png";
@@ -413,298 +406,6 @@ searchBar.addEventListener('input', () => {
     notFound();
 });
 
-/*
-searchBar.addEventListener('change', () => {
-
-    marvelMovies.innerHTML = ``;
-    dcMovies.innerHTML = ``;
-
-    document.querySelector('#marvel-comic-year').textContent = `Tales of Suspense #39 (1963)`;
-    document.querySelector('#dc-comic-year').textContent = `DC Comics Presents #26 (1980)`;
-
-    document.querySelector(`#marvel-card .back`).style.color = "#000";
-    document.querySelector(`#marvel-card .back hr`).style.borderColor = "#000";
-
-    document.querySelector(`#dc-card .back`).style.color = "#000";
-    document.querySelector(`#dc-card .back hr`).style.borderColor = "#000";
-
-
-    document.querySelector('#marvel-card .movies h2').style.display = 'block';
-
-    if (document.querySelector('.not-found').style.display == 'none')
-        document.querySelector('.not-found').style.transform = 'translateY(0)';
-
-    document.querySelector('.not-found').style.display = 'none';
-    document.querySelector('.result-container').style.transform = 'translateX(0px)';
-    document.querySelector('.logo-imgs').style.transform = 'translateX(0px)';
-
-    let searchValue = searchBar.value;
-    let found = false;
-    
-    if (searchValue === "") {
-
-        resetCards();
-        
-        return;
-        
-    } else {
-        
-        // Searching through the Marvel characters
-        for (let i = 0; i < marvelCharacters.length; i++) {
-            let character = marvelCharacters[i];
-            
-            if (character.name.toLowerCase().startsWith(searchValue)) {
-
-                changeCard(character.name, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
-                
-                let copycatFound = findCopycat("marvel", character.copycat);
-                if (copycatFound)
-                    changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
-                else
-                    hasNoCopycat("dc")
-                    
-                found = true;
-                return;
-                
-            } else if (character.alias !== undefined &&
-                character.alias.toLowerCase().startsWith(searchValue)) {
-                    
-                changeCard(character.alias, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
-                
-                let copycatFound = findCopycat("marvel", character.copycat);
-                if (copycatFound)
-                    changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
-                
-                found = true;
-                return;
-
-            } else if (character.name.toLowerCase().includes('-')) {    // ---(1)
-                
-                let splittenName = character.name.toLowerCase().split('-');
-                let tempName = `${splittenName[0]} ${splittenName[1]}`;
-                
-                if (tempName.toLowerCase().startsWith(searchValue)) {
-                    
-                    changeCard(character.name, character, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
-                    
-                    let copycatFound = findCopycat("marvel", character.copycat);
-                    if (copycatFound)
-                        changeCard(copycatFound.name, copycatFound, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
-                    else
-                        hasNoCopycat("dc")
-                    
-                    
-                    found = true;
-                    return;
-                    
-                }
-                
-            }
-        }
-
-
-        // Searching through the DC characters
-        if (!found) {
-            for (let i = 0; i < dcCharacters.length; i++) {
-                let character = dcCharacters[i];
-                
-                if (character.name.toLowerCase().startsWith(searchValue)) {
-    
-                    changeCard(character.name, character, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
-
-                    let copycatFound = findCopycat("dc", character.copycat);
-                    if (copycatFound)
-                        changeCard(copycatFound.name, copycatFound, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
-                    else
-                        hasNoCopycat("marvel")
-                    
-                    found = true;
-                    return;
-                    
-                }  else if (character.name.toLowerCase().includes('-')) {    // ---(1)
-
-                    let splittenName = character.name.toLowerCase().split('-');
-                    let tempName = `${splittenName[0]} ${splittenName[1]}`;
-                    
-                    if (tempName.toLowerCase().startsWith(searchValue)) {
-                        
-                        changeCard(character.name, character, "dc", dcImg, dcNameFront, dcNameBack, dcMovies);
-                        
-                        let copycatFound = findCopycat("dc", character.copycat);
-                        if (copycatFound)
-                            changeCard(copycatFound.name, copycatFound, "marvel", marvelImg, marvelNameFront, marvelNameBack, marvelMovies);
-                        else
-                            hasNoCopycat("marvel")        
-
-                        found = true;
-                        return;
-                        
-                    }
-                    
-                }
-            }
-        }
-        
-    }
-
-    notFound();
-});
-*/
-
-/*
-searchBar.addEventListener('keyup', () => {
-    marvelMovies.innerHTML = ``;
-    dcMovies.innerHTML = ``;
-
-    document.querySelector('#marvel-comic-year').textContent = `Tales of Suspense #39 (1963)`;
-    document.querySelector('#dc-comic-year').textContent = `DC Comics Presents #26 (1980)`;
-
-    document.querySelector(`#marvel-card .back`).style.color = "#000";
-    document.querySelector(`#marvel-card .back hr`).style.borderColor = "#000";
-
-    document.querySelector(`#dc-card .back`).style.color = "#000";
-    document.querySelector(`#dc-card .back hr`).style.borderColor = "#000";
-
-
-    document.querySelector('#marvel-card .movies h2').style.display = 'block';
-
-    if (document.querySelector('.not-found').style.display == 'none')
-        document.querySelector('.not-found').style.transform = 'translateY(0)';
-
-    document.querySelector('.not-found').style.display = 'none';
-    document.querySelector('.result-container').style.transform = 'translateX(0px)';
-    document.querySelector('.logo-imgs').style.transform = 'translateX(0px)';
-
-    let searchValue = searchBar.value;
-    let found = false;
-    
-    if (searchValue === "") {
-
-        resetCards();
-        
-        return;
-        
-    } else {
-        
-        // Searching through the Marvel characters
-        for (let i = 0; i < marvelCharacters.length; i++) {
-            let character = marvelCharacters[i];
-            
-            if (character.name.toLowerCase().startsWith(searchValue)) {
-
-                changeMarvelCard(character.name, character);
-                
-                let copycatFound = findCopycat("marvel", character.copycat);
-                if (copycatFound)
-                    changeDcCard(copycatFound.name, copycatFound)
-                else
-                    hasNoCopycat("dc")
-                    
-                found = true;
-                return;
-                
-            } else if (character.alias !== undefined &&
-                character.alias.toLowerCase().startsWith(searchValue)) {
-                    
-                changeMarvelCard(character.alias, character);
-                
-                let copycatFound = findCopycat("marvel", character.copycat);
-                if (copycatFound)
-                    changeDcCard(copycatFound.name, copycatFound)
-                
-                found = true;
-                return;
-
-            } else if (character.name.toLowerCase().includes('-')) {    // ---(1)
-                
-                let splittenName = character.name.toLowerCase().split('-');
-                let tempName = `${splittenName[0]} ${splittenName[1]}`;
-                
-                if (tempName.toLowerCase().startsWith(searchValue)) {
-                    
-                    changeMarvelCard(character.name, character);
-                    
-                    let copycatFound = findCopycat("marvel", character.copycat);
-                    if (copycatFound)
-                        changeDcCard(copycatFound.name, copycatFound)
-                    else
-                        hasNoCopycat("dc")
-                    
-                    
-                    found = true;
-                    return;
-                    
-                }
-                
-            }
-        }
-
-
-        // Searching through the DC characters
-        if (!found) {
-            for (let i = 0; i < dcCharacters.length; i++) {
-                let character = dcCharacters[i];
-                
-                if (character.name.toLowerCase().startsWith(searchValue)) {
-    
-                    changeDcCard(character.name, character);
-
-                    let copycatFound = findCopycat("dc", character.copycat);
-                    if (copycatFound)
-                        changeMarvelCard(copycatFound.name, copycatFound)
-                    else
-                        hasNoCopycat("marvel")
-                    
-                    found = true;
-                    return;
-                    
-                } else if (character.alias !== undefined &&
-                    character.alias.toLowerCase().startsWith(searchValue)) {
-                        
-                    changeMarvelCard(character.alias, character);
-                    
-
-                    let copycatFound = findCopycat("dc", character.copycat);
-                    if (copycatFound)
-                        changeMarvelCard(copycatFound.name, copycatFound)
-                    else
-                        hasNoCopycat("marvel")    
-                        
-                    found = true;
-                    return;
-    
-                } else if (character.name.toLowerCase().includes('-')) {    // ---(1)
-                    
-                    let splittenName = character.name.toLowerCase().split('-');
-                    let tempName = `${splittenName[0]} ${splittenName[1]}`;
-                    
-                    if (tempName.toLowerCase().startsWith(searchValue)) {
-                        
-                        changeMarvelCard(character.name, character);
-                        
-                        let copycatFound = findCopycat("dc", character.copycat);
-                        if (copycatFound)
-                            changeMarvelCard(copycatFound.name, copycatFound)
-                        else
-                            hasNoCopycat("marvel")        
-
-                        found = true;
-                        return;
-                        
-                    }
-                    
-                }
-            }
-        }
-        
-    }
-
-    notFound();
-
-});
-*/
-
-
 
 // Flip Button
 let flipped = false;
@@ -730,7 +431,7 @@ flipButton.addEventListener('click', () => {
 // --------------------------
 // When sombody searches a character whose name
 // contains a '-' (dash) 
-// it is likely for that person to type
+// it is likely for that person to not type
 // the dash, so he will input for the name without the dash.
 //
 // For example:
