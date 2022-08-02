@@ -151,6 +151,18 @@ header button i{
     justify-content: center;
     transform: translateY(0);
     transition: all .3s ease-in-out;
+
+}
+
+.not-found h1 {
+    font-size: 40px;
+    font-family: Calibri, sans-serif;
+    margin-bottom: -40px;
+    color: #585858
+}
+
+.not-found #emoji {
+    font-size: 100px;
 }
 
 .card {
