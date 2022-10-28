@@ -598,6 +598,7 @@ footer a {
     .result-container {
         flex-direction: column;
         width: 100vw;
+        height: 1000px
     }
 
     .not-found h1 {
@@ -645,6 +646,7 @@ footer a {
     }
 
     .front, .back {
+        margin: 100px 0;
         width: 85% !important;
         height: 400px !important;
     }
