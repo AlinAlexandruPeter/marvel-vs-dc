@@ -663,6 +663,15 @@ footer a {
         width: 80%
     }
 
+    .search-bar i {
+        font-size: 25px;
+    }
+
+    .go-up button {
+        z-index: -10;
+        opacity: 0
+    }
+
     footer {
         font-size: .9rem !important;
     }
