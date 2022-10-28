@@ -594,6 +594,10 @@ footer a {
         opacity: 0
     }
 
+    .result-container {
+        flex-direction: column
+    }
+
     .not-found h1 {
         font-size: 25px
     }
