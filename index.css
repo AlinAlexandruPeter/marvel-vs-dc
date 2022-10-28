@@ -515,7 +515,6 @@ footer a {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* box-sizing: border-box; */
 }
 
 .search-bar input {
@@ -622,15 +621,27 @@ footer a {
     section .indent > h3,
     section .indent > p {
         margin-left: 10px;
-        font-size: 1.1rem
+        font-size: 1.25rem
     }
 
     section .indent p {
         font-size: .9rem
     }
 
+    section h1 {
+        font-size: 1.75rem
+    }
+
     .go-up button {
         z-index: -10;
+    }
+
+    .search-bar {
+        width: 100%
+    }
+
+    .search-bar input {
+        width: 90%
     }
 
     footer {
@@ -641,7 +652,7 @@ footer a {
         width: 120px;
     }
 
-    footer img:first-of-type {
-        width: 80px
+    footer img:last-of-type {
+        width: 85px
     }
 }
