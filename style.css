@@ -383,10 +383,8 @@ footer a {
 .flip::after {
     content: attr(data-tooltip);
     color: white;
-    /* top: -2rem; */
     top: -75%;
-    /* left: -1.5rem; */
-    left: -40%;
+    left: 50%;
     font-size: 20px;
     white-space: nowrap;
     padding: 4px 5px;
@@ -398,7 +396,9 @@ footer a {
     align-items: center;
     background: rgb(0, 0, 0);
     opacity: 0;
-    transition: opacity .3s linear, height .2s ease-in-out;
+    transform: translateX(-50%);
+    transform-origin: center;
+    transition: all .3s linear, height .2s ease-in-out;
 }
 
 .flip:hover::after {
