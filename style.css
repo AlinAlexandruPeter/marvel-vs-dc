@@ -363,7 +363,7 @@ footer a {
 .flip {
     outline: none;
     border: none;
-    margin: 0px;
+    margin: 40px 0;
     aspect-ratio: 1 / 1;
     height: 60px;
     border-radius: 50%;
@@ -397,7 +397,7 @@ footer a {
     background: rgb(0, 0, 0);
     opacity: 0;
     transform: translateX(-50%);
-    transform-origin: center;
+    transform-origin: center center;
     transition: all .3s linear, height .2s ease-in-out;
 }
 
