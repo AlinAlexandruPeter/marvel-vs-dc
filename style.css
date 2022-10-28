@@ -638,10 +638,15 @@ footer a {
         font-size: .9rem
     }
 
-    .card, .front, .back {
-        margin-inline: 0 !important;
-        width: 90vw !important;
-        height: 300px !important
+    .card {
+        margin: 0 50px;
+        width: 100vw;
+        position: relative
+    }
+
+    .front, .back {
+        width: 85% !important;
+        height: 400px !important;
     }
 
     section h1 {
