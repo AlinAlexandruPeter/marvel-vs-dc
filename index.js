@@ -3,7 +3,7 @@ $('.flip').on('click', () => {
 });
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
+    continue;
     document.querySelector('.result-container').style.display = "none";
     document.querySelector('.logo-imgs').style.display = "none";
 
