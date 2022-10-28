@@ -641,7 +641,7 @@ footer a {
 
     .card {
         margin: 0 50px;
-        width: 100vw;
+        width: 85vw;
         position: relative
     }
 
@@ -660,11 +660,11 @@ footer a {
     }
 
     .search-bar {
-        width: 90%
+        width: 80%
     }
 
     .search-bar input {
-        width: 90%
+        width: 80%
     }
 
     footer {
