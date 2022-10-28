@@ -220,7 +220,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
 section:last-of-type {
@@ -551,7 +550,7 @@ footer a {
 #dark-toggle {
     position: absolute;
     top: 5%;
-    right: 5%;
+    right: 50%;
     width: 50px;
     height: 50px;
     box-sizing: border-box;
@@ -563,11 +562,6 @@ footer a {
     transition: background-color .2s ease-in-out;
 }
 
-/* #dark-toggle.dark-toggle {
-    background-color: var(--dark-secondary);
-    color: white;
-} */
-
 #dark-toggle:hover {
     background-color: rgba(220, 220, 220, 0.459);
     font-size: 1;
@@ -576,7 +570,7 @@ footer a {
 
 #dark-toggle i {
     font-size: 30px;
-    color:#000;
+    color: #000;
     text-align: center;
 }
 
@@ -615,5 +609,39 @@ footer a {
 
     .over-characters h2 {
         font-size: 1.25rem
+    }
+
+    .over-characters img {
+        display: none;
+    }
+
+    section {
+        width: 100vw
+    }
+
+    section .indent > h3,
+    section .indent > p {
+        margin-left: 10px;
+        font-size: 1.1rem
+    }
+
+    section .indent p {
+        font-size: .9rem
+    }
+
+    .go-up button {
+        z-index: -10;
+    }
+
+    footer {
+        font-size: 1.1rem !important;
+    }
+
+    footer img:first-of-type {
+        width: 120px;
+    }
+
+    footer img:first-of-type {
+        width: 80px
     }
 }
