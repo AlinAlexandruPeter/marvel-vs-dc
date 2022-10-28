@@ -640,7 +640,7 @@ footer a {
     }
 
     .card {
-        margin: 0 100px;
+        margin: 100px auto;
         width: 85vw;
         position: relative
     }
