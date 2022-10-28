@@ -2,30 +2,12 @@ $('.flip').on('click', () => {
     $('.card').toggleClass('flipping');
 });
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    continue;
-    document.querySelector('.result-container').style.display = "none";
-    document.querySelector('.logo-imgs').style.display = "none";
-
-    document.querySelector('.not-found').innerHTML = `
-        <h1>We figured out that your are using a Mobile device to access our website.
-        Plese chage to a Deasktop device</h1>  <br>
-        <h1>
-            📱 
-            <i class="fa-solid fa-arrow-right-long"></i> 
-            🖥️
-        </h1>
-    `;
-    document.querySelector('.search-bar input').disabled = true;
-}
-
 async function getData() {
     const response = await fetch('characters.json');
     const characters = await response.json();
     
     marvelCharacters = characters.marvelCharacters;
     dcCharacters = characters.dcCharacters;
-    
 }
 getData();
 
@@ -64,8 +46,6 @@ const enableDarkMode = () => {
     document.querySelector('footer').style.backgroundColor = '#000';
     document.querySelector('footer #all-rights').style.color = '#fff';
     document.querySelector('section:last-of-type').style.color = '#6b6b6b';
-
-    // document.querySelector('.not-found h1').style.color = "#fff";
     
     localStorage.setItem('darkMode', "on");
 };
@@ -115,16 +95,13 @@ let styleNotFound = () => {
         <h1>Hmm... It seems like comics didn't reveal this character...</h1><br>
         <h1 id="emoji">🤔</h1>
     `;
-    
 }
 
 let notFound = () => {
-
     document.querySelector('.result-container').style.transform = 'translateX(1500px)';
     document.querySelector('.logo-imgs').style.transform = 'translateX(1500px)';
     setTimeout(styleNotFound, 200)
     document.querySelector('.not-found').style.display = 'flex'; 
-
 }
 
 
@@ -269,6 +246,10 @@ searchBar.addEventListener('click', () => {
 
         resetCards();
     }
+});
+
+searchBar("click", () => {
+    searchBar.focus();
 });
 
 searchBar.addEventListener('input', () => {
