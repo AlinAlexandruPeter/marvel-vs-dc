@@ -602,12 +602,16 @@ footer a {
         font-size: 40px
     }
 
+    .logo-imgs {
+        width: 95%
+    }
+
     .over-characters h1 {
         font-size: 1.75rem
     }
 
     .over-characters h2 {
-        font-size: 1.25rem
+        font-size: 1.55rem
     }
 
     section img {
@@ -649,7 +653,7 @@ footer a {
     }
 
     footer img:first-of-type {
-        width: 120px;
+        width: 140px;
     }
 
     footer img:last-of-type {
