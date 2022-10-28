@@ -637,6 +637,11 @@ footer a {
         font-size: .9rem
     }
 
+    .card {
+        margin-inline: 0;
+        width: 90vw
+    }
+
     section h1 {
         font-size: 1.75rem
     }
