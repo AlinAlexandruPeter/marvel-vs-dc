@@ -595,7 +595,8 @@ footer a {
     }
 
     .result-container {
-        flex-direction: column
+        flex-direction: column;
+        width: 100vw;
     }
 
     .not-found h1 {
