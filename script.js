@@ -253,7 +253,7 @@ searchBar("click", () => {
     searchBar.focus();
 });
 
-searchBar.addEventListener('input', () => {
+searchBar.addEventListener('change', () => {
     marvelMovies.innerHTML = ``;
     dcMovies.innerHTML = ``;
 
