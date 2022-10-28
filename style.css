@@ -504,6 +504,7 @@ footer a {
 .container {
     width: 100%;
 }
+
 .search-container {
     height: 200px;
     width: 100%;
@@ -637,9 +638,10 @@ footer a {
         font-size: .9rem
     }
 
-    .card {
-        margin-inline: 0;
-        width: 90vw
+    .card, .front, .back {
+        margin-inline: 0 !important;
+        width: 90vw !important;
+        height: 300px !important
     }
 
     section h1 {
