@@ -655,10 +655,6 @@ footer a {
         font-size: 1.75rem
     }
 
-    .go-up button {
-        z-index: -10;
-    }
-
     .search-bar {
         width: 80%
     }
@@ -668,7 +664,7 @@ footer a {
     }
 
     footer {
-        font-size: 1.1rem !important;
+        font-size: .9rem !important;
     }
 
     footer img:first-of-type {
