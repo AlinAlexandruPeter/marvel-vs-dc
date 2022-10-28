@@ -640,9 +640,13 @@ footer a {
     }
 
     .card {
-        margin: 0 50px;
+        margin: 0 100px;
         width: 85vw;
         position: relative
+    }
+
+    .flip {
+        user-select: none !important;
     }
 
     .front, .back {
@@ -660,11 +664,12 @@ footer a {
     }
 
     .search-bar input {
-        width: 80%
+        width: 80%;
+        font-size: 35px
     }
 
     .search-bar i {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .go-up button {
