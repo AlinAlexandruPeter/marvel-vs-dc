@@ -248,7 +248,7 @@ searchBar.addEventListener('click', () => {
     }
 });
 
-searchBar("click", () => {
+searchBar.addEventListener("click", () => {
     document.querySelector("header").classList.add("dark")
     searchBar.focus();
 });
