@@ -248,11 +248,6 @@ searchBar.addEventListener('click', () => {
     }
 });
 
-searchBar.addEventListener("click", () => {
-    document.querySelector("header").classList.add("dark")
-    searchBar.focus();
-});
-
 searchBar.addEventListener('change', () => {
     marvelMovies.innerHTML = ``;
     dcMovies.innerHTML = ``;
