@@ -248,7 +248,7 @@ searchBar.addEventListener('click', () => {
     }
 });
 
-searchBar.addEventListener('change', () => {
+const search = () => {
     marvelMovies.innerHTML = ``;
     dcMovies.innerHTML = ``;
 
